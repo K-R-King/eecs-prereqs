@@ -13,7 +13,13 @@ export type Course = {
   prereqs: string[][];
   // groups that may also be taken the same term
   coreqs: string[][];
-  source?: string;
+  // the EECS department's course page, and the course in Berkeley's catalog
+  source?: string | null;
+  catalog_source?: string;
+  // where the official sources disagree
+  note?: string;
+  // hours per week in lecture, discussion and lab
+  class_hours?: number | null;
   outside?: boolean;
 };
 

@@ -9,6 +9,7 @@ const STEPS = [
 
 const SIBLINGS = [
   { id: "planner", icon: "🗺️", title: "EECS Planner", text: "Map your whole degree, semester by semester.", cta: "Open the planner →" },
+  { id: "electives", icon: "🎯", title: "EECS Electives", text: "Find the upper-division electives that fit you.", cta: "Find electives →" },
   { id: "links", icon: "🔗", title: "EECS Links", text: "Every important Berkeley link in one place.", cta: "Open the links →" },
 ] as const;
 
@@ -39,7 +40,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+        <div className="mt-10 grid gap-5 sm:grid-cols-3">
           {SIBLINGS.map((s) => (
             <a
               key={s.id}

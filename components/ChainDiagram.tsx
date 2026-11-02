@@ -7,8 +7,10 @@ const ROW_GAP = 14;
 
 type Edge = { from: string; to: string; kind: "required" | "oneOf" | "together" };
 
-// the course, everything it needs (recursively), and how far back each one sits
-function layout(code: string) {
+// The course, everything it needs (recursively), and how far back each one sits. The course's own
+// "one of these" requirements show every option; further back, only the option you've taken (or
+// else the usual one, which official text lists first) is drawn, so the chain stays readable.
+function layout(code: string, taken: Set<string>) {
   const depth: Record<string, number> = { [code]: 0 };
   const edges: Edge[] = [];
   const queue = [code];
@@ -18,9 +20,10 @@ function layout(code: string) {
     if (seen.has(current)) continue;
     seen.add(current);
     const c = COURSES[current];
+    const shown = (g: string[]) => (current === code ? g : [g.find((x) => taken.has(x)) ?? g[0]]);
     const groups = [
-      ...c.prereqs.map((g) => ({ g, kind: g.length > 1 ? "oneOf" : "required" }) as const),
-      ...c.coreqs.map((g) => ({ g, kind: "together" }) as const),
+      ...c.prereqs.map((g) => ({ g: shown(g), kind: g.length > 1 && current === code ? "oneOf" : "required" }) as const),
+      ...c.coreqs.map((g) => ({ g: shown(g), kind: "together" }) as const),
     ];
     for (const { g, kind } of groups) {
       for (const from of g) {
@@ -70,7 +73,7 @@ export default function ChainDiagram({
   taken: Set<string>;
   onSelect: (code: string) => void;
 }) {
-  const { pos, edges, width, height } = layout(code);
+  const { pos, edges, width, height } = layout(code, taken);
 
   if (Object.keys(pos).length === 1) {
     return (

@@ -15,6 +15,7 @@
         "Education"
       ],
       "description": "An introductory course for students with minimal prior exposure to computer science. Prepares students for future computer science courses and empowers them to utilize programming to solve problems in their field of study. Presents an overview of the history, great principles, and transformative applications of computer science, as well as a comprehensive introduction to programming. Topics include abstraction, recursion, algorithmic complexity, higher-order functions, concurrency, social implications of computing (privacy, education, algorithmic bias), and engaging research areas (data science, AI, HCI). Students will program in Snap! (a friendly graphical language) and Python, and will design and implement two projects of their choice.",
+      "class_hours": 7.0,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS10/",
@@ -29,13 +30,15 @@
       "terms": [],
       "areas": [],
       "description": "Basic building blocks and design methods to contruct synchronous digital systems, such as general purpose processors, hardware accelerators, and application specific processors. Representations and design methodologies for digital systems. Logic design using combinatorial and sequential circuits. Digital system implementation considering hardware descriptions languages, computer-aided design tools, field-programmable gate array architectures, and CMOS logic gates and state elements. Interfaces between peripherals, processor hardware, and software. Formal hardware laboratories and substantial design project.",
-      "prereq_text": "Computer Science 61C, Electrical Engineering 40.",
+      "class_hours": null,
+      "prereq_text": "COMPSCI 61C.",
       "prereqs": [
         [
           "CS61C"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS150/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20150",
       "coreqs": [],
       "reviewed": true
     },
@@ -53,13 +56,15 @@
         "Computer Architecture & Engineering"
       ],
       "description": "Instruction set architecture, microcoding, pipelining (simple and complex). Memory hierarchies and virtual memory. Processor parallelism: VLIW, vectors, multithreading. Multiprocessors.",
-      "prereq_text": "61C.",
+      "class_hours": 5.0,
+      "prereq_text": "COMPSCI 61C.",
       "prereqs": [
         [
           "CS61C"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS152/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20152",
       "coreqs": [],
       "reviewed": true
     },
@@ -77,6 +82,7 @@
         "Human-Computer Interaction"
       ],
       "description": "The design, implementation, and evaluation of user interfaces. User-centered design and task analysis. Conceptual models and interface metaphors. Usability inspection and evaluation methods. Analysis of user study data. Input methods (keyboard, pointing, touch, tangible) and input models. Visual design principles. Interface prototyping and implementation methodologies and tools. Students will develop a user interface for a specific task and target user group in teams.",
+      "class_hours": 4.0,
       "prereq_text": "COMPSCI 61B or COMPSCI 61BL.",
       "prereqs": [
         [
@@ -85,6 +91,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS160/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20160",
       "coreqs": [],
       "reviewed": true
     },
@@ -102,6 +109,7 @@
         "Security"
       ],
       "description": "Introduction to computer security. Cryptography, including encryption, authentication, hash functions, cryptographic protocols, and applications. Operating system security, access control. Network security, firewalls, viruses, and worms. Software security, defensive programming, and language-based security. Case studies from real-world systems.",
+      "class_hours": 4.5,
       "prereq_text": "COMPSCI 61B, COMPSCI 61C, and COMPSCI 70.",
       "prereqs": [
         [
@@ -115,6 +123,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS161/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20161",
       "coreqs": [],
       "reviewed": true
     },
@@ -133,6 +142,7 @@
         "Security"
       ],
       "description": "Basic concepts of operating systems and system programming. Utility programs, subsystems, multiple-program systems. Processes, interprocess communication, and synchronization. Memory allocation, segmentation, paging. Loading and linking, libraries. Resource allocation, scheduling, performance evaluation. File systems, storage devices, I/O systems. Protection, security, and privacy.",
+      "class_hours": 4.0,
       "prereq_text": "COMPSCI 61B, COMPSCI 61C, and COMPSCI 70.",
       "prereqs": [
         [
@@ -146,6 +156,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS162/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20162",
       "coreqs": [],
       "reviewed": true
     },
@@ -162,6 +173,7 @@
         "Programming Systems"
       ],
       "description": "Survey of programming languages. The design of modern programming languages. Principles and techniques of scanning, parsing, semantic analysis, and code generation. Implementation of compilers, interpreters, and assemblers. Overview of run-time organization and error handling.",
+      "class_hours": 4.0,
       "prereq_text": "COMPSCI 61B and COMPSCI 61C.",
       "prereqs": [
         [
@@ -172,6 +184,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS164/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20164",
       "coreqs": [],
       "reviewed": true
     },
@@ -187,13 +200,15 @@
       ],
       "areas": [],
       "description": "This course is an introduction to the Internet architecture. We will focus on the concepts and fundamental design principles that have contributed to the Internet's scalability and robustness and survey the various protocols and algorithms used within this architecture. Topics include layering, addressing, intradomain routing, interdomain routing, reliable delivery, congestion control, and the core protocols (e.g., TCP, UDP, IP, DNS, and HTTP) and network technologies (e.g., Ethernet, wireless).",
-      "prereq_text": "COMPSCI 61B; COMPSCI 61C is recommended.",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 61B. COMPSCI 61C is recommended.",
       "prereqs": [
         [
           "CS61B"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS168/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20168",
       "coreqs": [],
       "reviewed": true
     },
@@ -209,7 +224,8 @@
       ],
       "areas": [],
       "description": "Ideas and techniques for designing, developing, and modifying large software systems. Service-oriented architecture, behavior-driven design with user stories, cloud computing, test-driven development, automated testing, cost and quality metrics for maintainability and effort estimation, practical performance and security in software operations, design patterns and refactoring, specification and documentation, agile project team organization and management.",
-      "prereq_text": "COMPSCI C88C or DATA C88C or COMPSCI 61A or COMPSCI 47A; and COMPSCI 61B or COMPSCI 61BL or COMPSCI 47B.",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI C88C or DATA C88C or COMPSCI 61A or COMPSCI 47A. COMPSCI 61B or COMPSCI 61BL or COMPSCI 47B.",
       "prereqs": [
         [
           "CSC88C",
@@ -223,6 +239,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS169A/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20169A",
       "coreqs": [],
       "reviewed": true
     },
@@ -238,13 +255,15 @@
       ],
       "areas": [],
       "description": "Open-ended design project enhancing or creating software for real customers in an agile team setting. Teamwork coordination, effective customer meetings, pre- and post-iteration team meetings, running scrums and standups, technical communication. Contributing as a team to an open-source project; tools and workflows associated with open source collaboration, including fork-and-pull, rebase, upstream merge, continuous deployment & integration.",
-      "prereq_text": "COMPSCI 169A or COMPSCI W169A",
+      "class_hours": 11.0,
+      "prereq_text": "COMPSCI 169A or COMPSCI W169A.",
       "prereqs": [
         [
           "CS169A"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS169L/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20169L",
       "coreqs": [],
       "reviewed": true
     },
@@ -263,6 +282,7 @@
         "Theory"
       ],
       "description": "Concept and basic techniques in the design and analysis of algorithms; models of computation; lower bounds; algorithms for optimum search trees, balanced trees and UNION-FIND algorithms; numerical and algebraic algorithms; combinatorial algorithms. Turing machines, how to count steps, deterministic and nondeterministic Turing machines, NP-completeness. Unsolvable and intractable problems.",
+      "class_hours": 4.0,
       "prereq_text": "COMPSCI 61B and COMPSCI 70.",
       "prereqs": [
         [
@@ -273,6 +293,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS170/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20170",
       "coreqs": [],
       "reviewed": true
     },
@@ -288,13 +309,15 @@
       ],
       "areas": [],
       "description": "Cryptography or cryptology is the science of designing algorithms and protocols for enabling parties to communicate and compute securely in an untrusted environment (e.g. secure communication, digital signature, etc.) Over the last four decades, cryptography has transformed from an ad hoc collection of mysterious tricks into a rigorous science based on firm complexity-theoretic foundations. This modern complexity-theoretic approach to cryptography will be the focus. E.g., in the context of encryption we will begin by giving a precise mathematical definition for what it means to be a secure encryption scheme and then give a construction (realizing this security notion) assuming various computational hardness assumptions (e.g. factoring).",
-      "prereq_text": "COMPSCI 70",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 70.",
       "prereqs": [
         [
           "CS70"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS171/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20171",
       "coreqs": [],
       "reviewed": true
     },
@@ -312,13 +335,15 @@
         "Theory"
       ],
       "description": "Finite automata, Turing machines and RAMs. Undecidable, exponential, and polynomial-time problems. Polynomial-time equivalence of all reasonable models of computation. Nondeterministic Turing machines. Theory of NP-completeness: Cook's theorem, NP-completeness of basic problems. Selected topics in language theory, complexity and randomness.",
-      "prereq_text": "COMPSCI 170",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 170.",
       "prereqs": [
         [
           "CS170"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS172/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20172",
       "coreqs": [],
       "reviewed": true
     },
@@ -336,13 +361,15 @@
         "Theory"
       ],
       "description": "Permutations, combinations, principle of inclusion and exclusion, generating functions, Ramsey theory. Expectation and variance, Chebychev's inequality, Chernov bounds. Birthday paradox, coupon collector's problem, Markov chains and entropy computations, universal hashing, random number generation, random graphs and probabilistic existence bounds.",
-      "prereq_text": "COMPSCI 170",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 170.",
       "prereqs": [
         [
           "CS170"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS174/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20174",
       "coreqs": [],
       "reviewed": true
     },
@@ -357,7 +384,8 @@
       ],
       "areas": [],
       "description": "Algorithms and probabilistic models that arise in various computational biology applications: suffix trees, suffix arrays, pattern matching, repeat finding, sequence alignment, phylogenetics, genome rearrangements, hidden Markov models, gene finding, motif finding, stochastic context free grammars, RNA secondary structure. There are no biology prerequisites for this course, but a strong quantitative background will be essential.",
-      "prereq_text": "COMPSCI 70 and COMPSCI 170; experience programming in a language such as C, C++, Java, or Python.",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 70 and COMPSCI 170;. Experience programming in a language such as C, C++, Java, or Python.",
       "prereqs": [
         [
           "CS70"
@@ -367,6 +395,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS176/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20176",
       "coreqs": [],
       "reviewed": true
     },
@@ -382,6 +411,7 @@
       ],
       "areas": [],
       "description": "This advanced undergraduate course introduces students to computing with visual data (images and video). We will cover acquisition, representation, and manipulation of visual information from digital photographs (image processing), image analysis and visual understanding (computer vision), and image synthesis (computational photography). Key algorithms will be presented, ranging from classical to contemporary, with an emphasis on using these techniques to build practical systems. The hands-on emphasis will be reflected in the programming assignments, where students will acquire their own images and develop, largely from scratch, image analysis and synthesis tools for real-world applications.",
+      "class_hours": 4.0,
       "prereq_text": "COMPSCI 61B; MATH 53; and MATH 54, MATH 56, MATH 110, or ELENG 66. COMPSCI C182 or COMPSCI 189 should be taken as a co-requisite.",
       "prereqs": [
         [
@@ -398,6 +428,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS180/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20180",
       "coreqs": [
         [
           "CSC182",
@@ -420,7 +451,8 @@
         "Graphics"
       ],
       "description": "A broad introduction to the fundamentals of computer graphics. The main areas covered are modeling, rendering, animation and imaging. Topics include 2D and 3D transformations, drawing to raster displays, sampling, texturing, antialiasing, geometric modeling, ray tracing and global illumination, animation, cameras, image processing and computational imaging. There will be an emphasis on mathematical and geometric aspects of graphics, and the ability to write complete 3D graphics programs.",
-      "prereq_text": "COMPSCI 61B; and MATH 54 OR MATH 110 Ability to write medium-to-large programs in C++. The course includes intensive programming assignments requiring manual memory management, debugging, and performance tuning. Linear Algebra: Matrix and vector operations, dot/cross products, transformations, eigenvectors. Calculus: Differentiation and integration, particularly in the context of curves and lighting models. Trigonometry: Especially in camera models, projection, and shading.",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 61B. MATH 54 OR MATH 110. Ability to write medium-to-large programs in C++. The course includes intensive programming assignments requiring manual memory management, debugging, and performance tuning. Linear Algebra: Matrix and vector operations, dot/cross products, transformations, eigenvectors. Calculus: Differentiation and integration, particularly in the context of curves and lighting models. Trigonometry: Especially in camera models, projection, and shading.",
       "prereqs": [
         [
           "CS61B"
@@ -431,6 +463,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS184/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20184",
       "coreqs": [],
       "reviewed": true
     },
@@ -445,6 +478,7 @@
       ],
       "areas": [],
       "description": "This course will cover the intersection of control, reinforcement learning, and deep learning. This course will provide an advanced treatment of the reinforcement learning formalism, the most critical model-free reinforcement learning algorithms (policy gradients, value function and Q-function learning, and actor-critic), a discussion of model-based reinforcement learning algorithms, an overview of imitation learning, and a range of advanced topics, including exploration, model-based learning with video prediction, transfer learning, multi-task learning, and meta-learning. Homework assignments will cover imitation learning, policy gradients, Q-learning, and model-based reinforcement learning, as well as a final project.",
+      "class_hours": 4.0,
       "prereq_text": "CS189/289A or equivalent is a prerequisite for the course. This course will assume some familiarity with reinforcement learning, numerical optimization and machine learning, as well as a basic working knowledge of how to train deep neural networks (which is taught in CS182 and briefly covered in CS189).",
       "prereqs": [
         [
@@ -452,6 +486,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS185/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20185",
       "coreqs": [],
       "reviewed": true
     },
@@ -468,7 +503,8 @@
         "Database Management Systems"
       ],
       "description": "Access methods and file systems to facilitate data access. Hierarchical, network, relational, and object-oriented data models. Query languages for models. Embedding query languages in programming languages. Database services including protection, integrity control, and alternative views of data. High-level interfaces including application generators, browsers, and report writers. Introduction to transaction processing. Database system implementation to be done as term project.",
-      "prereq_text": "COMPSCI 61C or COMPSCI 47C. COMPSCI 47C may be taken as a co-requisite for transfer students.",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 61C or COMPSCI 47C.",
       "prereqs": [
         [
           "CS61C",
@@ -476,6 +512,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS186/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20186",
       "coreqs": [],
       "reviewed": true
     },
@@ -493,6 +530,7 @@
         "Artificial Intelligence"
       ],
       "description": "Ideas and techniques underlying the design of intelligent computer systems. Topics include search, game playing, knowledge representation, inference, planning, reasoning under uncertainty, machine learning, robotics, perception, and language understanding.",
+      "class_hours": 4.5,
       "prereq_text": "COMPSCI 61A, COMPSCI 61B, and COMPSCI 70.",
       "prereqs": [
         [
@@ -506,6 +544,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS188/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20188",
       "coreqs": [],
       "reviewed": true
     },
@@ -523,6 +562,7 @@
         "Artificial Intelligence"
       ],
       "description": "Theoretical foundations, algorithms, methodologies, and applications for machine learning. Topics may include supervised methods for regression and classication (linear models, trees, neural networks, ensemble methods, instance-based methods); generative and discriminative probabilistic models; Bayesian parametric learning; density estimation and clustering; Bayesian networks; time series models; dimensionality reduction; programming projects covering a variety of real-world applications.",
+      "class_hours": 4.0,
       "prereq_text": "MATH 53 and MATH 54; and COMPSCI 70 or consent of instructor.",
       "prereqs": [
         [
@@ -536,6 +576,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS189/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20189",
       "coreqs": [],
       "reviewed": true
     },
@@ -552,6 +593,7 @@
         "Security"
       ],
       "description": "Topics include electronic community; the changing nature of work; technological risks; the information economy; intellectual property; privacy; artificial intelligence and the sense of self; pornography and censorship; professional ethics. Students will lead discussions on additional topics.",
+      "class_hours": 1.5,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS195/",
@@ -569,6 +611,7 @@
       ],
       "areas": [],
       "description": "Implementation of generic operations. Streams and iterators. Implementation techniques for supporting functional, object-oriented, and constraint-based programming in the Scheme programming language. Together with 9D, 47A constitutes an abbreviated, self-paced version of 61A for students who have already taken a course equivalent to 61B.",
+      "class_hours": null,
       "prereq_text": "COMPSCI 61B, COMPSCI 9D, and consent of instructor.",
       "prereqs": [
         [
@@ -576,6 +619,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS47A/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2047A",
       "coreqs": [],
       "reviewed": true
     },
@@ -590,9 +634,11 @@
       ],
       "areas": [],
       "description": "Iterators. Hashing, applied to strings and multi-dimensional structures. Heaps. Storage management. Design and implementation of a program containing hundreds of lines of code. Students who have completed a portion of the subject matter of COMPSCI 61B may, with consent of instructor, complete COMPSCI 61B in this self-paced course. Please note that students in the College of Engineering are required to receive additional permission from the College as well as the EECS department for the course to count in place of COMPSCI 61B.",
+      "class_hours": null,
       "prereq_text": "A course in data structures, COMPSCI 9G, and consent of instructor.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS47B/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2047B",
       "coreqs": [],
       "reviewed": true
     },
@@ -607,9 +653,11 @@
       ],
       "areas": [],
       "description": "MIPS instruction set simulation. The assembly and linking process. Caches and virtual memory. Pipelined computer organization. Students with sufficient partial credit in 61C may, with consent of instructor, complete the credit in this self-paced course.",
+      "class_hours": null,
       "prereq_text": "Experience with assembly language including writing an interrupt handler, COMPSCI 9C, and consent of instructor.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS47C/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2047C",
       "coreqs": [],
       "reviewed": true
     },
@@ -627,12 +675,16 @@
         "Programming Systems"
       ],
       "description": "An introduction to programming and computer science focused on abstraction techniques as means to manage program complexity. Techniques include procedural abstraction; control abstraction using recursion, higher-order functions, generators, and streams; data abstraction using interfaces, objects, classes, and generic operators; and language abstraction using interpreters and macros. The course exposes students to programming paradigms, including functional, object-oriented, and declarative approaches. It includes an introduction to asymptotic analysis of algorithms. There are several significant programming projects.",
+      "class_hours": 6.0,
       "prereq_text": "MATH 1A (may be taken concurrently) or Math 10A or Math 16A. Programming experience equivalent to that gained from a score of 3 or above on the Advanced Placement Computer Science exam.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS61A/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2061A",
       "coreqs": [
         [
-          "MATH51"
+          "MATH51",
+          "MATH10A",
+          "MATH16A"
         ]
       ],
       "reviewed": true
@@ -651,14 +703,17 @@
         "Programming Systems"
       ],
       "description": "Fundamental dynamic data structures, including linear lists, queues, trees, and other linked structures; arrays strings, and hash tables. Storage management. Elementary principles of software engineering. Abstract data types. Algorithms for sorting and searching. Introduction to the Java programming language.",
+      "class_hours": 6.0,
       "prereq_text": "COMPSCI 61A, COMPSCI 88, or ENGIN 7.",
       "prereqs": [
         [
           "CS61A",
-          "CSC88C"
+          "CSC88C",
+          "ENGIN7"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS61B/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2061B",
       "coreqs": [],
       "reviewed": true
     },
@@ -674,14 +729,17 @@
       ],
       "areas": [],
       "description": "The same material as in 61B, but in a laboratory-based format.",
+      "class_hours": 7.0,
       "prereq_text": "COMPSCI 61A, COMPSCI 88, or ENGIN 7.",
       "prereqs": [
         [
           "CS61A",
-          "CSC88C"
+          "CSC88C",
+          "ENGIN7"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS61BL/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2061BL",
       "coreqs": [],
       "reviewed": true
     },
@@ -697,7 +755,8 @@
       ],
       "areas": [],
       "description": "The internal organization and operation of digital computers. Machine architecture, support for high-level languages (logic, arithmetic, instruction sequencing) and operating systems (I/O, interrupts, memory management, process switching). Elements of computer logic design. Tradeoffs involved in fundamental architectural design decisions.",
-      "prereq_text": "61A, along with either 61B or 61BL, or programming experience equivalent to that gained in 9C, 9F, or 9G.",
+      "class_hours": 6.0,
+      "prereq_text": "COMPSCI 61A. COMPSCI 61B or 61BL, or programming experience equivalent to that gained in 9C, 9F, or 9G.",
       "prereqs": [
         [
           "CS61A"
@@ -708,6 +767,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS61C/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2061C",
       "coreqs": [],
       "reviewed": true
     },
@@ -722,9 +782,11 @@
       ],
       "areas": [],
       "description": "Logic, infinity, and induction; applications include undecidability and stable marriage problem. Modular arithmetic and GCDs; applications include primality testing and cryptography. Polynomials; examples include error correcting codes and interpolation. Probability including sample spaces, independence, random variables, law of large numbers; examples include load balancing, existence arguments, Bayesian inference.",
+      "class_hours": null,
       "prereq_text": "Sophomore mathematical maturity, and programming experience equivalent to that gained in 3 or the Advanced Placement Computer Science A course.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS70/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2070",
       "coreqs": [],
       "reviewed": true
     },
@@ -740,23 +802,28 @@
       ],
       "areas": [],
       "description": "In this course, students will explore the data science lifecycle, including question formulation, data collection and cleaning, exploratory data analysis and visualization, statistical inference and prediction​, and decision-making.​ This class will focus on quantitative critical thinking​ and key principles and techniques needed to carry out this cycle. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.",
+      "class_hours": 5.0,
       "prereq_text": "DATA C8 or STAT 20 with a C- or better, or Pass; and COMPSCI 61A, COMPSCI/DATA C88C, or ENGIN 7 with a C- or better, or Pass; Corequisite: MATH 54, 56, 110, ELENG 66, PHYSICS 89 or equivalent linear algebra (C- or better, or Pass, required if completed prior to Data C100).",
       "prereqs": [
         [
-          "DATA8"
+          "DATA8",
+          "STAT20"
         ],
         [
           "CS61A",
-          "CSC88C"
+          "CSC88C",
+          "ENGIN7"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC100/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20C100",
       "coreqs": [
         [
           "MATH54",
           "MATH56",
           "MATH110",
-          "EE66"
+          "EE66",
+          "PHYS89"
         ]
       ],
       "reviewed": true
@@ -772,9 +839,11 @@
       ],
       "areas": [],
       "description": "The class provides an introduction to algorithmic questions in economic design. The class will cover problems of public goods and social choice, as well as allocative questions and private consumption. The focus is on normative questions: From the perspective of social goals, these are efficiency, fairness, and equity. In terms of private goals, the focus is on revenue maximization. The course will cover voting, fair division, pricing and market mechanisms. There is an emphasis on the algorithmic questions that arise naturally in economic design.",
+      "class_hours": 4.0,
       "prereq_text": "Students should be comfortable with formal mathematical proofs, and will be expected to write proofs on their own.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC177/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20C177",
       "coreqs": [],
       "reviewed": true
     },
@@ -789,7 +858,8 @@
       ],
       "areas": [],
       "description": "Deep Networks have revolutionized computer vision, language technology, robotics and control. They have growing impact in many other areas of science and engineering. They do not however, follow a closed or compact set of theoretical principles. In Yann Lecun's words they require \"an interplay between intuitive insights, theoretical modeling, practical implementations, empirical studies, and scientific analyses.\" This course attempts to cover that ground.",
-      "prereq_text": "MATH 53, MATH 54, and COMPSCI 61B; COMPSCI 70 or STAT 134; COMPSCI 189 is recommended.",
+      "class_hours": 4.0,
+      "prereq_text": "MATH 53, MATH 54, and COMPSCI 61B. COMPSCI 70 or STAT 134. COMPSCI 189 is recommended.",
       "prereqs": [
         [
           "MATH53"
@@ -806,6 +876,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC182/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20C182",
       "coreqs": [],
       "reviewed": true
     },
@@ -820,17 +891,22 @@
       ],
       "areas": [],
       "description": "This course will cover the principles and practices of managing data at scale, with a focus on use cases in data analysis and machine learning. We will cover the entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration, with a focus on ensuring reliable, scalable operationalization.",
+      "class_hours": 4.0,
       "prereq_text": "COMPSCI 61B, or INFO 206B, or equivalent courses in programming with a C- or better, or Pass; and COMPSCI C100 / DATA C100 / STAT C100, or COMPSCI 189, or INFO 251, or DATA 144, or equivalent upper-division course in data science with a C- or better, or Pass.",
       "prereqs": [
         [
-          "CS61B"
+          "CS61B",
+          "INFO206B"
         ],
         [
           "CSC100",
-          "CS189"
+          "CS189",
+          "INFO251",
+          "DATA144"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC187/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20C187",
       "coreqs": [],
       "reviewed": true
     },
@@ -842,24 +918,29 @@
       "terms": [],
       "areas": [],
       "description": "This multidisciplinary course provides an introduction to fundamental conceptual aspects of quantum mechanics from a computational and informational theoretic perspective, as well as physical implementations and technological applications of quantum information science. Basic sections of quantum algorithms, complexity, and cryptography, will be touched upon, as well as pertinent physical realizations from nanoscale science and engineering.",
+      "class_hours": null,
       "prereq_text": "Linear Algebra (ELENG 66 or PHYSICS 89 or MATH 54) AND either discrete mathematics (COMPSCI 70 or MATH 55), or quantum mechanics (PHYSICS 7C or PHYSICS 137A or CHEM 120A).",
       "prereqs": [
         [
           "EE66",
+          "PHYS89",
           "MATH54"
         ],
         [
           "CS70",
           "MATH55",
-          "PHYS7C"
+          "PHYS7C",
+          "PHYS137A",
+          "CHEM120A"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC191/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20C191",
       "coreqs": [],
       "reviewed": true
     },
     "DATA8": {
-      "code": "CSC8",
+      "code": "DATA8",
       "display": "CS C8",
       "title": "Foundations of Data Science",
       "units": "4",
@@ -870,9 +951,11 @@
       ],
       "areas": [],
       "description": "Foundations of data science from three perspectives: inferential thinking, computational thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, document collections, geographical data, and social networks. It delves into social and legal issues surrounding data analysis, including issues of privacy and data ownership.",
+      "class_hours": 5.0,
       "prereq_text": "This course may be taken on its own, but students are encouraged to take it concurrently with a data science connector course (numbered 88 in a range of departments).",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC8/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=DATA%20C8",
       "coreqs": [],
       "reviewed": true
     },
@@ -888,6 +971,7 @@
       ],
       "areas": [],
       "description": "Development of Computer Science topics appearing in Foundations of Data Science (C8); expands computational concepts and techniques of abstraction. Understanding the structures that underlie the programs, algorithms, and languages used in data science and elsewhere. Mastery of a particular programming language while studying general techniques for managing program complexity, e.g., functional, object-oriented, and declarative programming. Provides practical experience with composing larger systems through several significant programming projects.",
+      "class_hours": 5.0,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC88C/",
@@ -907,6 +991,7 @@
         "Integrated Circuits"
       ],
       "description": "This course covers the fundamental circuit and device concepts needed to understand analog integrated circuits. After an overview of the basic properties of semiconductors, the p-n junction and MOS capacitors are described and the MOSFET is modeled as a large-signal device. Two port small-signal amplifiers and their realization using single stage and multistage CMOS building blocks are discussed. Sinusoidal steady-state signals are introduced and the techniques of phasor analysis are developed, including impedance and the magnitude and phase response of linear circuits. The frequency responses of single and multi-stage amplifiers are analyzed. Differential amplifiers are introduced.",
+      "class_hours": 7.0,
       "prereq_text": "ELENG 66 AND ELENG 64.",
       "prereqs": [
         [
@@ -917,6 +1002,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE105/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20105",
       "coreqs": [],
       "reviewed": true
     },
@@ -931,7 +1017,8 @@
       ],
       "areas": [],
       "description": "This course is designed to provide an introduction to electric power conversion, distribution, and generation with renewable energy sources. The course will introduce fundamental concepts in the area of electric power, such as complex and reactive power, phasors, impedance, magnetic circuits and transformers, power factor, power quality, three-phase power, ac-dc conversion, and a conceptual overview of renewable energy and the integration of sustainable energy sources on the electric grid. Real world applications, ranging from ground-fault circuit interrupters to residential power distribution and solar photovoltaic dc-ac inverters will be explored in live lecture demonstration.",
-      "prereq_text": "MATH 54; PHYSICS 7B, ELENG 66; ELENG 64 and a basic working knowledge of RLC circuits.",
+      "class_hours": 4.0,
+      "prereq_text": "MATH 54; PHYSICS 7B, ELENG 66; ELENG 64; and a basic working knowledge of RLC circuits.",
       "prereqs": [
         [
           "MATH54"
@@ -947,6 +1034,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE108/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20108",
       "coreqs": [],
       "reviewed": true
     },
@@ -961,13 +1049,15 @@
       ],
       "areas": [],
       "description": "Power conversion circuits and techniques. Characterization and design of magnetic devices including transformers, reactors, and electromagnetic machinery. Characteristics of bipolar and MOS power semiconductor devices. Applications to motor control, switching power supplies, lighting, power systems, and other areas as appropriate.",
-      "prereq_text": "ELENG 108",
+      "class_hours": 6.0,
+      "prereq_text": "ELENG 108.",
       "prereqs": [
         [
           "EE108"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE113/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20113",
       "coreqs": [],
       "reviewed": true
     },
@@ -982,13 +1072,15 @@
       ],
       "areas": [],
       "description": "This course is the second in a two-semester series to equip students with the skills needed to analyze, design, and prototype power electronic converters. While EE 113/213A provides an overview of power electronics fundamentals and applications, EE 113B/213Bfocuses on the practical design and hardware implementation of power converters. The primary focus ofEE 113B/213B is time in the laboratory, with sequential modules on topics such as power electronic components,PCB layout, closed-loop control, and experimental validation. At the end of the course, students will havedesigned, prototyped, and validated a power converter from scratch, demonstrating a skill set that is critical forpower electronics engineers in research and industry.",
-      "prereq_text": "ELENG 113",
+      "class_hours": 7.5,
+      "prereq_text": "ELENG 113.",
       "prereqs": [
         [
           "EE113"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE113B/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20113B",
       "coreqs": [],
       "reviewed": true
     },
@@ -1005,6 +1097,7 @@
         "Physical Electronics"
       ],
       "description": "Review of static electric and magnetic fields and applications; Maxwell's equations; transmission lines; propagation and reflection of plane waves; introduction to guided waves, microwave networks, and radiation and antennas. Minilabs on statics, transmission lines, and waves. Explanation of cellphone antennas, WiFi communication, and other wireless technologies.",
+      "class_hours": 6.0,
       "prereq_text": "ELENG 64, MATH 53, and MATH 54; PHYSICS 7B or equivalent that covers AC circuits and electromagnetics up to Maxwell's equations.",
       "prereqs": [
         [
@@ -1021,6 +1114,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE117/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20117",
       "coreqs": [],
       "reviewed": true
     },
@@ -1034,9 +1128,15 @@
       ],
       "areas": [],
       "description": "Hands-on laboratory course in microwave and wireless measurement techniques. Topics include vector network analysis, S-parameter characterization, signal integrity, noise figure, spectrum analysis, antenna gain and radiation patterns, radar cross-section, and wireless communications measurements. Students use professional RF instrumentation to characterize devices and systems from DC to millimeter-wave frequencies. Final project in one of four tracks: RF front-end, antennas, wireless communications, or radar. (EE 117B: undergraduate; EE 217B: graduate with additional analysis.)",
-      "prereq_text": "",
-      "prereqs": [],
+      "class_hours": null,
+      "prereq_text": "ELENG 117.",
+      "prereqs": [
+        [
+          "EE117"
+        ]
+      ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE117B/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20117B",
       "coreqs": [],
       "reviewed": true
     },
@@ -1053,6 +1153,7 @@
         "Physical Electronics"
       ],
       "description": "Fundamental principles of optical systems. Geometrical optics and aberration theory. Stops and apertures, prisms, and mirrors. Diffraction and interference. Optical materials and coatings. Radiometry and photometry. Basic optical devices and the human eye. The design of optical systems. Lasers, fiber optics, and holography.",
+      "class_hours": 4.0,
       "prereq_text": "MATH 53; ELENG 64 and ELENG 66, or MATH 54.",
       "prereqs": [
         [
@@ -1068,6 +1169,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE118/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20118",
       "coreqs": [],
       "reviewed": true
     },
@@ -1087,7 +1189,8 @@
         "Signal Processing"
       ],
       "description": "Continuous and discrete-time transform analysis techniques with illustrative applications. Linear and time-invariant systems, transfer functions. Fourier series, Fourier transform, Laplace and Z-transforms. Sampling and reconstruction. Solution of differential and difference equations using transforms. Frequency response, Bode plots, stability analysis. Illustrated by analysis of communication systems and feedback control systems.",
-      "prereq_text": "ELENG 66 AND ELENG 64.",
+      "class_hours": 5.0,
+      "prereq_text": "ELENG 64 AND ELENG 66.",
       "prereqs": [
         [
           "EE66"
@@ -1097,6 +1200,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE120/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20120",
       "coreqs": [],
       "reviewed": true
     },
@@ -1111,7 +1215,8 @@
       ],
       "areas": [],
       "description": "Introduction to the fundamental principles underlying the analysis, design and optimization of analog and digital communication systems. Topics include Analog and Digital baseband and passband modulation techniques, receiver design, source coding, error-correcting codes. Examples will be taken from existing communication systems such as : broadcast Radio, cell-phones, RFID, Wifi etc. The course will heavily use linear systems and Fourier techniques. Emphasis will be on capturing and decoding real signals using software defined radios (SDR).",
-      "prereq_text": "ELENG 64, ELENG 66, and COMPSCI 70. EE 120 is strongly recommended.",
+      "class_hours": null,
+      "prereq_text": "ELENG 64, ELENG 66, and COMPSCI 170. ELENG 120 strongly recommended.",
       "prereqs": [
         [
           "EE64"
@@ -1124,6 +1229,8 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE121/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20121",
+      "note": "The catalog's wording says COMPSCI 170, but its rule and the EECS department's page both say COMPSCI 70.",
       "coreqs": [],
       "reviewed": true
     },
@@ -1141,13 +1248,15 @@
         "Operating Systems & Networking"
       ],
       "description": "This course focuses on the fundamentals of the wired and wireless communication networks. The course covers both the architectural principles for making these networks scalable and robust, as well as the key techniques essential for analyzing and designing them. The topics include graph theory, Markov chains, queuing, optimization techniques, the physical and link layers, switching, transport, cellular networks and Wi-Fi.",
-      "prereq_text": "COMPSCI 70",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 70.",
       "prereqs": [
         [
           "CS70"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE122/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20122",
       "coreqs": [],
       "reviewed": true
     },
@@ -1165,13 +1274,15 @@
         "Signal Processing"
       ],
       "description": "Discrete time signals and systems: Fourier and Z transforms, DFT, 2-dimensional versions. Digital signal processing topics: flow graphs, realizations, FFT, chirp-Z algorithms, Hilbert transform relations, quantization effects, linear prediction. Digital filter design methods: windowing, frequency sampling, S-to-Z methods, frequency-transformation methods, optimization methods, 2-dimensional filter design.",
-      "prereq_text": "EL ENG 120",
+      "class_hours": 5.0,
+      "prereq_text": "ELENG 120.",
       "prereqs": [
         [
           "EE120"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE123/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20123",
       "coreqs": [],
       "reviewed": true
     },
@@ -1188,7 +1299,8 @@
         "Physical Electronics"
       ],
       "description": "Overview of electronic properties of semiconductor. Metal-semiconductor contacts, pn junctions, bipolar transistors, and MOS field-effect transistors. Properties that are significant to device operation for integrated circuits. Silicon device fabrication technology.",
-      "prereq_text": "ELENG 64 and ELENG 66",
+      "class_hours": 4.0,
+      "prereq_text": "ELENG 64 and ELENG 66.",
       "prereqs": [
         [
           "EE64"
@@ -1198,6 +1310,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE130/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20130",
       "coreqs": [],
       "reviewed": true
     },
@@ -1214,7 +1327,8 @@
         "Physical Electronics"
       ],
       "description": "This course is designed to give an introduction to, and overview of, the fundamentals of photovoltaic devices. Students will learn how solar cells work, understand the concepts and models of solar cell device physics, and formulate and solve relevant physical problems related to photovoltaic devices. Monocrystalline, thin film and third generation solar cells will be discussed and analyzed. Light management and economic considerations in a solar cell system will also be covered.",
-      "prereq_text": "ELENG 64 and ELENG 66; or Math 54 and Physics 7B; or equivalent",
+      "class_hours": 4.0,
+      "prereq_text": "ELENG 66 and ELENG 64; or Math 54 and Physics 7B; or equivalent.",
       "prereqs": [
         [
           "EE64",
@@ -1234,6 +1348,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE134/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20134",
       "coreqs": [],
       "reviewed": true
     },
@@ -1248,6 +1363,7 @@
       ],
       "areas": [],
       "description": "Overview of conventional electric power conversion and delivery, emphasizing a systemic understanding of the electric grid with primary focus at the transmission level, aimed toward recognizing needs and opportunities for technological innovation. Topics include aspects of a.c. system design, electric generators, components of transmission and distribution systems, power flow analysis, system planning and operation, performance measures, and limitations of legacy technologies.",
+      "class_hours": 4.0,
       "prereq_text": "Introduction to electric power and renewable energy (ELENG 108).",
       "prereqs": [
         [
@@ -1255,6 +1371,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE137A/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20137A",
       "coreqs": [],
       "reviewed": true
     },
@@ -1271,13 +1388,15 @@
         "Integrated Circuits"
       ],
       "description": "Single and multiple stage transistor amplifiers. Operational amplifiers. Feedback amplifiers, 2-port formulation, source, load, and feedback network loading. Frequency response of cascaded amplifiers, gain-bandwidth exchange, compensation, dominant pole techniques, root locus. Supply and temperature independent biasing and references. Selected applications of analog circuits such as analog-to-digital converters, switched capacitor filters, and comparators. Hardware laboratory and design project.",
-      "prereq_text": "EL ENG 105",
+      "class_hours": 7.0,
+      "prereq_text": "ELENG 105.",
       "prereqs": [
         [
           "EE105"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE140/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20140",
       "coreqs": [],
       "reviewed": true
     },
@@ -1289,9 +1408,11 @@
       "terms": [],
       "areas": [],
       "description": "CMOS devices and deep sub-micron manufacturing technology. CMOS inverters and complex gates. Modeling of interconnect wires. Optimization of designs with respect to a number of metrics: cost, reliability, performance, and power dissipation. Sequential circuits, timing considerations, and clocking approaches. Design of large system blocks, including arithmetic, interconnect, memories, and programmable logic arrays. Introduction to design methodologies, including hands-on experience.",
-      "prereq_text": "Electrical Engineering 40; Electrical Engineering 105 and Computer Science 150 recommended.",
+      "class_hours": null,
+      "prereq_text": "ELENG 40. ELENG 105 and COMPSCI 150 recommended.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE141/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20141",
       "coreqs": [],
       "reviewed": true
     },
@@ -1308,7 +1429,8 @@
         "Integrated Circuits"
       ],
       "description": "Analysis and design of electronic circuits for communication systems, with an emphasis on integrated circuits for wireless communication systems. Analysis of noise and distortion in amplifiers with application to radio receiver design. Power amplifier design with application to wireless radio transmitters. Radio-frequency mixers, oscillators, phase-locked loops, modulators, and demodulators.",
-      "prereq_text": "ELENG 64, ELENG 66, and EL ENG 105.",
+      "class_hours": 7.0,
+      "prereq_text": "ELENG 64, ELENG 66 and ELENG 105.",
       "prereqs": [
         [
           "EE64"
@@ -1321,6 +1443,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE142/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20142",
       "coreqs": [],
       "reviewed": true
     },
@@ -1337,13 +1460,15 @@
         "Physical Electronics"
       ],
       "description": "Integrated circuit device fabrication and surface micromachining technology. Thermal oxidation, ion implantation, impurity diffusion, film deposition, expitaxy, lithography, etching, contacts and interconnections, and process integration issues. Device design and mask layout, relation between physical structure and electrical/mechanical performance. MOS transistors and poly-Si surface microstructures will be fabricated in the laboratory and evaluated.",
-      "prereq_text": "PHYSICS 7B",
+      "class_hours": 6.0,
+      "prereq_text": "PHYSICS 7B.",
       "prereqs": [
         [
           "PHYS7B"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE143/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20143",
       "coreqs": [],
       "reviewed": true
     },
@@ -1360,6 +1485,7 @@
         "Micro/Nano Electro Mechanical Systems"
       ],
       "description": "This course will teach fundamentals of micromachining and microfabrication techniques, including planar thin-film process technologies, photolithographic techniques, deposition and etching techniques, and the other technologies that are central to MEMS fabrication. It will pay special attention to teaching of fundamentals necessary for the design and analysis of devices and systems in mechanical, electrical, fluidic, and thermal energy/signal domains, and will teach basic techniques for multi-domain analysis. Fundamentals of sensing and transduction mechanisms including capacitive and piezoresistive techniques, and design and analysis of micmicromachined miniature sensors and actuators using these techniques will be covered.",
+      "class_hours": 4.0,
       "prereq_text": "ELENG 64 and ELENG 66.",
       "prereqs": [
         [
@@ -1370,6 +1496,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE147/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20147",
       "coreqs": [],
       "reviewed": true
     },
@@ -1383,6 +1510,7 @@
       ],
       "areas": [],
       "description": "Business and Finance for Engineers is a comprehensive course designed specifically for engineering students and others with a strong mathematical background. It provides a focused introduction to essential business and finance principles, distilling key elements of a traditional two-year MBA program into a curriculum tailored for technically-minded individuals. The course is particularly beneficial for students interested in starting their own businesses, and serves as an introduction for those interested in quantitative finance.",
+      "class_hours": null,
       "prereq_text": "Engineering or STEM major. Exceptions made for others with strong mathematical background and permission from the instructor.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE156/",
@@ -1402,6 +1530,7 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "Design project course, focusing on application of theoretical principles in electrical engineering to control of a small-scale system, such as a mobile robot. Small teams of students will design and construct a mechatronic system incorporating sensors, actuators, and intelligence.",
+      "class_hours": 11.5,
       "prereq_text": "ELENG 64, ELENG 66, COMPSCI 61A, COMPSCI 61B, COMPSCI 61C, and ELENG 120.",
       "prereqs": [
         [
@@ -1424,6 +1553,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE192/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%20192",
       "coreqs": [],
       "reviewed": true
     },
@@ -1438,13 +1568,15 @@
       ],
       "areas": [],
       "description": "This course teaches the fundamentals needed to predict the behavior of real-world electronic phenomena and applications via mathematical models and circuit analytical methods that simplify initially complex problems, rendering them solvable and understandable. Among the specific topics to be covered are time and frequency domain representation, complex arithmetic, phasor analysis of systems governed by differential equations, Kirchhoff’s laws, physical examples of electronic elements and devices, RLC circuits, op amp-based signal processors, feedback methods, and circuit models for domains beyond the electronic. Class contact time includes lectures, discussions, and a laboratory component designed to help solidify learned concepts.",
-      "prereq_text": "MATH 54",
+      "class_hours": null,
+      "prereq_text": "MATH 54.",
       "prereqs": [
         [
           "MATH54"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE64/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%2064",
       "coreqs": [],
       "reviewed": true
     },
@@ -1459,13 +1591,15 @@
       ],
       "areas": [],
       "description": "This course offers an introduction to signals, systems, optimization, controls, and machine learning, all grounded in linear algebraic techniques. After a brief review of linear algebra, students will delve into topics such as signal processing, linear systems, feedback control, optimization methods, and foundational machine learning algorithms. Emphasizing practical applications, the course prepares EECS majors for advanced study by connecting mathematical concepts to real-world engineering problems.",
-      "prereq_text": "MATH 54",
+      "class_hours": null,
+      "prereq_text": "MATH 54.",
       "prereqs": [
         [
           "MATH54"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EE66/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%2066",
       "coreqs": [],
       "reviewed": true
     },
@@ -1482,13 +1616,21 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "An introduction to the kinematics, dynamics, and control of robot manipulators, robotic vision, and sensing. The course covers forward and inverse kinematics of serial chain manipulators, the manipulator Jacobian, force relations, dynamics, and control. It presents elementary principles on proximity, tactile, and force sensing, vision sensors, camera calibration, stereo construction, and motion detection. The course concludes with current applications of robotics in active perception, medical robotics, and other areas.",
-      "prereq_text": "EL ENG 120 or consent of instructor.",
+      "class_hours": 7.0,
+      "prereq_text": "Familiarity with linear algebra at the level of ELENG 64/ELENG 66 or Math 54. Experience coding in python at the level of COMPSCI 61A. Preferred: experience developing software at the level of COMPSCI 61B and experience using Linux.",
       "prereqs": [
         [
-          "EE120"
+          "EE64",
+          "EE66",
+          "MATH54"
+        ],
+        [
+          "CS61A"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EEC106A/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20C106A",
+      "note": "The EECS department's page still lists ELENG 120; the catalog's newer wording is used here.",
       "coreqs": [],
       "reviewed": true
     },
@@ -1505,13 +1647,15 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "This course is a sequel to Electrical Engineering C106A/Bioengineering C125, which covers kinematics, dynamics and control of a single robot. This course will cover dynamics and control of groups of robotic manipulators coordinating with each other and interacting with the environment. Concepts will include an introduction to grasping and the constrained manipulation, contacts and force control for interaction with the environment. We will also cover active perception guided manipulation, as well as the manipulation of non-rigid objects. Throughout, we will emphasize design and human-robot interactions, and applications to applications in manufacturing, service robotics, tele-surgery, and locomotion.",
-      "prereq_text": "EECS C106A / BIO ENG C125 or consent of the instructor.",
+      "class_hours": 7.0,
+      "prereq_text": "EECS C106A / BIO ENG C106A / MEC ENG C106A / EECS C206A or an equivalent course. A strong programming background, knowledge of Python and Matlab, and some coursework in feedback controls (such as EL ENG C128 / MEC ENG C134) are also useful. Students who have not taken the prerequisite course should have a strong programming background, knowledge of Python and Matlab, and exposure to linear algebra, Lagrangian dynamics, and feedback controls at the intermediate level.",
       "prereqs": [
         [
           "EEC106A"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EEC106B/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20C106B",
       "coreqs": [],
       "reviewed": true
     },
@@ -1528,6 +1672,7 @@
         "Signal Processing"
       ],
       "description": "Biomedical imaging is a clinically important application of engineering, applied mathematics, physics, and medicine. In this course, we apply linear systems theory and basic physics to analyze X-ray imaging, computerized tomography, nuclear medicine, and MRI. We cover the basic physics and instrumentation that characterizes medical image as an ideal perfect-resolution image blurred by an impulse response. This material could prepare the student for a career in designing new medical imaging systems that reliably detect small tumors or infarcts.",
+      "class_hours": 4.0,
       "prereq_text": "ELENG 64 and ELENG 66.",
       "prereqs": [
         [
@@ -1554,6 +1699,7 @@
         "Biosystems & Computational Biology"
       ],
       "description": "Laboratory exercises exploring a variety of electronic transducers for measuring physical quantities such as temperature, force, displacement, sound, light, ionic potential; the use of circuits for low-level differential amplification and analog signal processing; and the use of microcomputers for digital sampling and display. Lectures cover principles explored in the laboratory exercises; construction, response and signal to noise of electronic transducers and actuators; and design of circuits for sensing and controlling physical quantities.",
+      "class_hours": 5.0,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/EEC145L/",
@@ -1571,6 +1717,7 @@
       ],
       "areas": [],
       "description": "Introduction to laboratory and field study of the biomechanics of animals and plants using fundamental biomechanical techniques and equipment. Course has a series of rotations involving students in experiments demonstrating how solid and fluid mechanics can be used to discover the way in which diverse organisms move and interact with their physical environment. The laboratories emphasize sampling methodology, experimental design, and statistical interpretation of results. Latter third of course devoted to independent research projects. Written reports and class presentation of project results are required.",
+      "class_hours": 8.0,
       "prereq_text": "INTEGBI 135 or consent of instructor. For Electrical Engineering and Computer Sciences students: EL ENG 105, EL ENG 120 or COMPSCI 184.",
       "prereqs": [
         [
@@ -1593,13 +1740,15 @@
       ],
       "areas": [],
       "description": "This course introduces fundamental concepts, algorithms, and state-of-the-art methods for probabilistic and learning-based robot perception, inference, and localization, with emphasis on multi-modal sensor fusion for autonomous embodied AI systems such as aerial and ground robots. It covers probabilistic state estimation and their extension to modern SLAM frameworks. The course also addresses learning-based predictive models for robotic inference, including neural networks and Gaussian Processes for uncertainty-aware prediction, motion forecasting, planning, and control. A laboratory component includes hands-on experiments and a final project requirement.",
-      "prereq_text": "Students are expected to have taken EECS C106A / BioE C106A / ME C106A / EECS C206A or an equivalent course. A strong programming background, knowledge of Python and Matlab, and some coursework in feedback controls and dynamical systems or preliminary knowledge of probability are also useful.",
+      "class_hours": null,
+      "prereq_text": "EECS C106A or BIOENG C106A or MECENG C106A or EECS C206A.",
       "prereqs": [
         [
           "EEC106A"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS116/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20116",
       "coreqs": [],
       "reviewed": true
     },
@@ -1617,9 +1766,11 @@
         "Signal Processing"
       ],
       "description": "This course covers the fundamentals of probability and random processes useful in fields such as networks, communication, signal processing, and control. Sample space, events, probability law. Conditional probability. Independence. Random variables. Distribution, density functions. Random vectors. Law of large numbers. Central limit theorem. Estimation and detection. Markov chains.",
-      "prereq_text": "COMPSCI 70 preferred but not required; Familiarity with linear algebra.",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI 70 preferred but not required. Familiarity with linear algebra.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS126/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20126",
       "coreqs": [],
       "reviewed": true
     },
@@ -1636,7 +1787,8 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "This course offers an introduction to optimization models and their applications, ranging from machine learning and statistics to decision-making and control, with emphasis on numerically tractable problems, such as linear or constrained least-squares optimization.",
-      "prereq_text": "ELENG 66 and ELENG 64, or consent of instructor.",
+      "class_hours": 4.0,
+      "prereq_text": "ELENG 64 and ELENG 66, or consent of instructor.",
       "prereqs": [
         [
           "EE66"
@@ -1646,6 +1798,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS127/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20127",
       "coreqs": [],
       "reviewed": true
     },
@@ -1659,6 +1812,7 @@
       ],
       "areas": [],
       "description": "This course is an introduction to design automation, concerned with rigorous methods and tools for the modeling, design, and analysis of complex engineered systems. Topics include design flows, discrete and continuous modeling techniques, and fundamental synthesis, verification, and simulation algorithms. Integrated circuit design will be used as a central example, augmented by examples from cyber-physical systems and software design. Laboratory assignments and a class project will expose students to state-of-the-art languages and tools.",
+      "class_hours": null,
       "prereq_text": "ELENG 66 and CS 70. ELENG 64 and CS 61C strongly recommended.",
       "prereqs": [
         [
@@ -1669,6 +1823,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS144/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20144",
       "coreqs": [],
       "reviewed": true
     },
@@ -1682,7 +1837,8 @@
       ],
       "areas": [],
       "description": "This course introduces students to the basics of modeling, analysis, and design of embedded, cyber-physical systems. Students learn how to integrate computation with physical processes to meet a desired specification. Topics include models of computation, control, analysis and verification, interfacing with the physical world, real-time behaviors, mapping to platforms, and distributed embedded systems. The course has a strong laboratory component, with emphasis on a semester-long sequence of projects.",
-      "prereq_text": "COMPSCI 61C and COMPSCI 70; ELENG 66 and ELENG 64, or permission of instructor.",
+      "class_hours": 6.0,
+      "prereq_text": "COMPSCI 61C and COMPSCI 70; ELENG 66 and ELENG 66, or permission of instructor.",
       "prereqs": [
         [
           "CS61C"
@@ -1698,6 +1854,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS149/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20149",
       "coreqs": [],
       "reviewed": true
     },
@@ -1714,6 +1871,7 @@
         "Computer Architecture & Engineering"
       ],
       "description": "An introduction to digital and system design. The material provides a top-down view of the principles, components, and methodologies for large scale digital system design. The underlying CMOS devices and manufacturing technologies are introduced, but quickly abstracted to higher-levels to focus the class on design of larger digital modules for both FPGAs (field programmable gate arrays) and ASICs (application specific integrated circuits). The class includes extensive use of industrial grade design automation and verification tools for assignments, labs and projects. The class has two lab options: ASIC Lab (EECS 151LA) and FPGA Lab (EECS 151LB). Students must enroll in at least one of the labs concurrently with the class.",
+      "class_hours": 4.0,
       "prereq_text": "ELENG 66 and ELENG 64.",
       "prereqs": [
         [
@@ -1724,6 +1882,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS151/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20151",
       "coreqs": [],
       "reviewed": true
     },
@@ -1738,7 +1897,8 @@
       ],
       "areas": [],
       "description": "This lab lays the foundation of modern digital design by first presenting the scripting and hardware description language base for specification of digital systems and interactions with tool flows. The labs are centered on a large design with the focus on rapid design space exploration. The lab exercises culminate with a project design, e.g., implementation of a three-stage RISC-V processor with a register file and caches. The design is mapped to simulation and layout specification.",
-      "prereq_text": "COMPSCI 61C, ELENG 66, ELENG 64 and EL ENG 105.",
+      "class_hours": 3.0,
+      "prereq_text": "COMPSCI 61C, ELENG 66, ELENG 64, and ELENG 105.",
       "prereqs": [
         [
           "CS61C"
@@ -1754,6 +1914,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS151LA/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20151LA",
       "coreqs": [],
       "reviewed": true
     },
@@ -1768,7 +1929,8 @@
       ],
       "areas": [],
       "description": "This lab covers the design of modern digital systems with Field-Programmable Gate Array (FPGA) platforms. A series of lab exercises provide the background and practice of digital design using a modern FPGA design tool flow. Digital synthesis, partitioning, placement, routing, and simulation tools for FPGAs are covered in detail. The labs exercises culminate with a large design project, e.g., an implementation of a full three-stage RISC-V processor system, with caches, graphics acceleration, and external peripheral components. The design is mapped and demonstrated on an FPGA hardware platform.",
-      "prereq_text": "ELENG 66, ELENG 64, and COMPSCI 61C; ELENG 105 recommended.",
+      "class_hours": 3.0,
+      "prereq_text": "ELENG 64, ELENG 66, and COMPSCI 61C. ELENG 105 recommended.",
       "prereqs": [
         [
           "EE66"
@@ -1781,6 +1943,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS151LB/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20151LB",
       "coreqs": [],
       "reviewed": true
     },
@@ -1795,7 +1958,8 @@
       ],
       "areas": [],
       "description": "This course provides a hands-on introduction to language technologies, covering methods for processing speech and text. This includes: statistical models, early neural models, and transformer-based LLMs; model architectures, training, evaluation, and social impacts; core tasks and methods like machine translation, parsing, and prompting; analysis and representation of speech and speech recognition models. Weekly assignments provide practical experience in building systems and understanding their strengths and limitations.",
-      "prereq_text": "COMPSCI C182, COMPSCI 188, or COMPSCI 189",
+      "class_hours": 4.0,
+      "prereq_text": "COMPSCI C182, COMPSCI 188, or COMPSCI 189.",
       "prereqs": [
         [
           "CSC182",
@@ -1804,6 +1968,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS183/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20183",
       "coreqs": [],
       "reviewed": true
     },
@@ -1819,6 +1984,7 @@
       ],
       "areas": [],
       "description": "This course allows students who have had a discrete math and/or probability course to complete the work in CS70. Logic, infinity, and induction; applications include undecidability and stable marriage problem. Modular arithmetic and GCDs; applications include primality testing and cryptography. Polynomials; examples include error correcting codes and interpolation. Probability including sample spaces, independence, random variables, law of large numbers; examples include load balancing, existence arguments, Bayesian inference.",
+      "class_hours": 8.0,
       "prereq_text": "Sophomore mathematical maturity, programming experience equivalent to that gained in COMPSCI 61A, a prior college level course on discrete math and/or probability, and consent of the instructor.",
       "prereqs": [
         [
@@ -1826,6 +1992,7 @@
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS47F/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%2047F",
       "coreqs": [],
       "reviewed": true
     },
@@ -1839,14 +2006,21 @@
       ],
       "areas": [],
       "description": "A modern introduction, really an invitation to intelligent control, which is the ability to blend model-based techniques for the control of cyber physical systems with adaptive control, optimal control and machine learning to build intelligent systems.",
-      "prereq_text": "ELENG 66, Linear algebra (such as Math 110) is desirable, ELENG 120 is desirable and can be taken concurrently",
+      "class_hours": null,
+      "prereq_text": "ELENG 66. Linear algebra (such as Math 110) and ELENG 120. ELENG 120 can be taken concurrently.",
       "prereqs": [
         [
           "EE66"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECSC128/",
-      "coreqs": [],
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20C128",
+      "note": "The EECS department's page calls ELENG 120 \"desirable\"; the catalog's newer wording requires it.",
+      "coreqs": [
+        [
+          "EE120"
+        ]
+      ],
       "reviewed": true
     },
     "EECSC191A": {
@@ -1859,14 +2033,17 @@
       ],
       "areas": [],
       "description": "This is the first semester of a multidisciplinary two-semester sequence in Quantum Computing. This semester provides an introduction to fundamental conceptual aspects of quantum mechanics in the language of qubits and quantum gates, and a first introduction to quantum computation. Topics in part one include basic concepts and results in quantum information, quantum algorithms, and an introduction to quantum error correction.",
-      "prereq_text": "Linear Algebra: Either ELENG 66, Physics 89, Math 54, or equivalent. Some background in either quantum mechanics (Physics 137A, Chemistry 120A, or equivalent) or discrete mathematics (CS 70, Math 55, or equivalent) is expected.",
+      "class_hours": 4.0,
+      "prereq_text": "ELENG 66 or PHYSICS 89 or MATH 54. Some background in either quantum mechanics (Physics 137A, Chemistry 120A, or equivalent) or discrete mathematics (CS 70, Math 55, or equivalent) is expected.",
       "prereqs": [
         [
           "EE66",
+          "PHYS89",
           "MATH54"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECSC191A/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20C191A",
       "coreqs": [],
       "reviewed": true
     },
@@ -1880,13 +2057,15 @@
       ],
       "areas": [],
       "description": "This is the second semester of a multidisciplinary two-semester sequence in Quantum Computing. This second semester covers fundamentals of control of qubits, methods of quantum error mitigation, quantum benchmarking, quantum supremacy and tests of quantumness, advanced quantum error correction including fault-tolerant quantum computing and error thresholds, theory/practice of near-term fault fault tolerance, discussions of different physical platforms for quantum computing, and alternative paradigms for quantum computing.",
-      "prereq_text": "C191A or equivalent (with permission of instructor)",
+      "class_hours": 4.0,
+      "prereq_text": "C191A or equivalent (with permission of instructor).",
       "prereqs": [
         [
           "EECSC191A"
         ]
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECSC191B/",
+      "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=EECS%20C191B",
       "coreqs": [],
       "reviewed": true
     }
@@ -1895,7 +2074,7 @@
     "MATH54": {
       "code": "MATH54",
       "display": "MATH 54",
-      "title": "Linear Algebra & Differential Equations",
+      "title": "Linear Algebra and Differential Equations",
       "outside": true,
       "prereqs": [
         [
@@ -1903,7 +2082,9 @@
         ]
       ],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "Mathematics 52 (previously 1B or N1B), 10B, or N10B.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2054"
     },
     "MATH52": {
       "code": "MATH52",
@@ -1916,7 +2097,9 @@
         ]
       ],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "MATH 51.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2052"
     },
     "MATH51": {
       "code": "MATH51",
@@ -1925,36 +2108,47 @@
       "outside": true,
       "prereqs": [],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "Three and one-half years of high school math, including trigonometry and analytic geometry. Students with high school exam credits (such as AP credit) should consider choosing a course more advanced than 51.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2051"
     },
-    "PHYS7B": {
-      "code": "PHYS7B",
-      "display": "PHYSICS 7B",
-      "title": "Physics for Scientists & Engineers (Heat, Electricity & Magnetism)",
+    "PHYS89": {
+      "code": "PHYS89",
+      "display": "PHYSICS 89",
+      "title": "Introduction to Mathematical Physics",
       "outside": true,
       "prereqs": [
         [
-          "PHYS7A"
-        ],
-        [
-          "MATH52"
+          "MATH53"
         ]
       ],
-      "coreqs": [],
-      "reviewed": true
+      "coreqs": [
+        [
+          "PHYS7A"
+        ]
+      ],
+      "reviewed": true,
+      "prereq_text": "Math 53 or instructor's consent. PHYSICS 5A or 7A (can be taken concurrently), or instructor consent.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=PHYSICS%2089"
     },
     "PHYS7A": {
       "code": "PHYS7A",
       "display": "PHYSICS 7A",
-      "title": "Physics for Scientists & Engineers (Mechanics)",
+      "title": "Physics for Scientists and Engineers (Mechanics)",
       "outside": true,
-      "prereqs": [],
-      "coreqs": [
+      "prereqs": [
         [
           "MATH51"
         ]
       ],
-      "reviewed": true
+      "coreqs": [
+        [
+          "MATH52"
+        ]
+      ],
+      "reviewed": true,
+      "prereq_text": "Math 51; Math 52 (which may be taken concurrently). High school physics.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=PHYSICS%207A"
     },
     "MATH53": {
       "code": "MATH53",
@@ -1967,16 +2161,89 @@
         ]
       ],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "MATH 52.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2053"
+    },
+    "PHYS7B": {
+      "code": "PHYS7B",
+      "display": "PHYSICS 7B",
+      "title": "Physics for Scientists and Engineers (Heat, Electricity and Magnetism)",
+      "outside": true,
+      "prereqs": [
+        [
+          "PHYS7A"
+        ],
+        [
+          "MATH52"
+        ]
+      ],
+      "coreqs": [
+        [
+          "MATH53"
+        ]
+      ],
+      "reviewed": true,
+      "prereq_text": "PHYSICS 7A, Math 51-52, Math 53 (may be taken concurrently).",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=PHYSICS%207B"
+    },
+    "CHEM120A": {
+      "code": "CHEM120A",
+      "display": "CHEM 120A",
+      "title": "Physical Chemistry",
+      "outside": true,
+      "prereqs": [
+        [
+          "PHYS7B"
+        ],
+        [
+          "MATH53"
+        ],
+        [
+          "MATH54"
+        ]
+      ],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "CHEM 4B or equivalent. Physics 7B or 8B. Mathematics 53; Mathematics 54 or consent of instructor. MATH 54.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=CHEM%20120A"
+    },
+    "PHYS137A": {
+      "code": "PHYS137A",
+      "display": "PHYSICS 137A",
+      "title": "Quantum Mechanics",
+      "outside": true,
+      "prereqs": [
+        [
+          "PHYS7C"
+        ]
+      ],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "Physics 5A, 5B, 5C or 7A, 7B, 7C.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=PHYSICS%20137A"
     },
     "PHYS7C": {
       "code": "PHYS7C",
       "display": "PHYSICS 7C",
-      "title": "Physics for Scientists & Engineers (Waves, Optics & Modern Physics)",
+      "title": "Physics for Scientists and Engineers (Waves, Optics and Modern Physics)",
       "outside": true,
-      "prereqs": [],
+      "prereqs": [
+        [
+          "PHYS7B"
+        ],
+        [
+          "MATH53"
+        ],
+        [
+          "MATH54",
+          "PHYS89"
+        ]
+      ],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "7A-7B, Math 51-52, Math 53, Math 54 or Physics 89 minimum grade required: C-, Passed (P) or higher.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=PHYSICS%207C"
     },
     "MATH55": {
       "code": "MATH55",
@@ -1985,7 +2252,50 @@
       "outside": true,
       "prereqs": [],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "Mathematical maturity appropriate to a sophomore math class. 51(previously 1A)-52(previously 1B) recommended.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2055"
+    },
+    "DATA144": {
+      "code": "DATA144",
+      "display": "DATA 144",
+      "title": "Data Mining and Analytics",
+      "outside": true,
+      "prereqs": [],
+      "coreqs": [
+        [
+          "CSC100"
+        ]
+      ],
+      "reviewed": true,
+      "prereq_text": "Corequisite: Data/CompSci/Stat C100 (C- or better, or Pass, required if completed prior to Data 144).",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=DATA%20144"
+    },
+    "INFO251": {
+      "code": "INFO251",
+      "display": "INFO 251",
+      "title": "Applied Machine Learning",
+      "outside": true,
+      "prereqs": [
+        [
+          "INFO206B"
+        ]
+      ],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "INFO 206B, or equivalent course in Python programming; or permission of instructor. INFO 271B, or equivalent graduate-level course in statistics or econometrics; or permission of instructor.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=INFO%20251"
+    },
+    "INFO206B": {
+      "code": "INFO206B",
+      "display": "INFO 206B",
+      "title": "Introduction to Data Structures and Analytics",
+      "outside": true,
+      "prereqs": [],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "INFO 206A or equivalent, or permission of instructor.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=INFO%20206B"
     },
     "STAT134": {
       "code": "STAT134",
@@ -1994,25 +2304,116 @@
       "outside": true,
       "prereqs": [],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "One year of calculus.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=STAT%20134"
     },
     "MATH110": {
       "code": "MATH110",
       "display": "MATH 110",
       "title": "Abstract Linear Algebra",
       "outside": true,
-      "prereqs": [],
+      "prereqs": [
+        [
+          "MATH54",
+          "MATH56"
+        ],
+        [
+          "MATH55",
+          "MATH74"
+        ]
+      ],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "MATH 54 or 56. 55 or 74.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%20110"
+    },
+    "MATH74": {
+      "code": "MATH74",
+      "display": "MATH 74",
+      "title": "Transition to Upper Division Mathematics",
+      "outside": true,
+      "prereqs": [
+        [
+          "MATH53"
+        ],
+        [
+          "MATH54"
+        ]
+      ],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "MATH 53 and 54.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2074"
     },
     "MATH56": {
       "code": "MATH56",
       "display": "MATH 56",
       "title": "Linear Algebra",
       "outside": true,
+      "prereqs": [
+        [
+          "MATH52"
+        ]
+      ],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "Math 52 (previously known as Math 1B or N1B), 10B, or N10B. [N is the summer version].",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2056"
+    },
+    "ENGIN7": {
+      "code": "ENGIN7",
+      "display": "ENGIN 7",
+      "title": "Introduction to Computer Programming and Numerical Methods",
+      "outside": true,
+      "prereqs": [],
+      "coreqs": [
+        [
+          "MATH52"
+        ]
+      ],
+      "reviewed": true,
+      "prereq_text": "MATH 52 (may be taken concurrently).",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ENGIN%207"
+    },
+    "STAT20": {
+      "code": "STAT20",
+      "display": "STAT 20",
+      "title": "Introduction to Probability and Statistics",
+      "outside": true,
+      "prereqs": [],
+      "coreqs": [
+        [
+          "MATH51",
+          "MATH16A",
+          "MATH10A"
+        ]
+      ],
+      "reviewed": true,
+      "prereq_text": "MATH 1A, MATH 16A, MATH 10A/10B, MATH 51 or consent of instructor.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=STAT%2020"
+    },
+    "MATH10A": {
+      "code": "MATH10A",
+      "display": "MATH 10A",
+      "title": "Methods of Mathematics: Calculus, Statistics, and Combinatorics",
+      "outside": true,
       "prereqs": [],
       "coreqs": [],
-      "reviewed": true
+      "reviewed": true,
+      "prereq_text": "Three and one-half years of high school math, including trigonometry and analytic geometry.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2010A"
+    },
+    "MATH16A": {
+      "code": "MATH16A",
+      "display": "MATH 16A",
+      "title": "Analytic Geometry and Calculus",
+      "outside": true,
+      "prereqs": [],
+      "coreqs": [],
+      "reviewed": true,
+      "prereq_text": "Three years of high school math, including trigonometry. Consult the mathematics department for details.",
+      "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2016A"
     }
   }
 }

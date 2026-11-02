@@ -13,7 +13,7 @@ const LEVELS = [
   { id: "all", label: "All" },
   { id: "lower", label: "Lower division" },
   { id: "upper", label: "Upper division" },
-  { id: "outside", label: "Math & physics" },
+  { id: "outside", label: "Outside EECS" },
 ] as const;
 type Level = (typeof LEVELS)[number]["id"];
 
@@ -348,6 +348,11 @@ function CourseDetail({ course, taken, onSelect, onToggleTaken }: {
             {t === "Fall" ? "🍂" : t === "Spring" ? "🌸" : "☀️"} {t}
           </span>
         ))}
+        {course.class_hours && (
+          <span className="rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold-dark dark:text-gold">
+            ⏱ {course.class_hours} hrs/week in class
+          </span>
+        )}
         {(course.areas ?? []).map((a) => (
           <span key={a} className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300">{a}</span>
         ))}
@@ -400,22 +405,21 @@ function CourseDetail({ course, taken, onSelect, onToggleTaken }: {
         <ChainDiagram code={course.code} taken={taken} onSelect={onSelect} />
       </div>
 
-      {!course.outside && (
-        <div className="mt-8 rounded-2xl border-l-4 border-gold bg-slate-50 dark:bg-slate-800/60 p-4">
-          <p className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Official prerequisites</p>
-          <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">{course.prereq_text || "None listed."}</p>
-          {course.source && (
-            <a href={course.source} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm font-semibold text-berkeley-light hover:text-gold-dark dark:text-blue-300 dark:hover:text-gold">
-              EECS course page ↗
+      <div className="mt-8 rounded-2xl border-l-4 border-gold bg-slate-50 dark:bg-slate-800/60 p-4">
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Official prerequisites</p>
+        <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">{course.prereq_text || "None listed."}</p>
+        {course.note && <p className="mt-2 text-xs text-amber-800 dark:text-amber-200">⚠️ {course.note}</p>}
+        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+          {[
+            { href: course.outside ? course.source : course.catalog_source, label: "Berkeley catalog ↗" },
+            { href: course.outside ? null : course.source, label: "EECS course page ↗" },
+          ].filter((l) => l.href).map((l) => (
+            <a key={l.label} href={l.href!} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-berkeley-light hover:text-gold-dark dark:text-blue-300 dark:hover:text-gold">
+              {l.label}
             </a>
-          )}
+          ))}
         </div>
-      )}
-      {course.outside && (
-        <p className="mt-8 text-sm text-slate-500 dark:text-slate-400">
-          Taught outside EECS. Check the <a href="https://classes.berkeley.edu" target="_blank" rel="noopener noreferrer" className="font-semibold text-berkeley-light hover:text-gold-dark dark:text-blue-300">Class Schedule</a> for its full prerequisites.
-        </p>
-      )}
+      </div>
     </article>
   );
 }
