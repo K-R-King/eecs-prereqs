@@ -1,6 +1,6 @@
 # UC Berkeley EECS Prereqs
 
-See what every undergraduate EECS course needs first, the full chain back to your first class, and what each course unlocks. A sister site to the [EECS Planner](https://eecs-planner.vercel.app), [EECS Electives](https://eecs-electives.vercel.app) and [EECS Links](https://eecs-links.vercel.app).
+See what every undergraduate EECS course needs first, the full chain back to your first class, and what each course unlocks. Part of the [EECS Hub](https://eecs-hub.vercel.app), with the [EECS Planner](https://eecs-planner.vercel.app), [EECS Electives](https://eecs-electives.vercel.app) and [EECS Links](https://eecs-links.vercel.app).
 
 ## Features
 
@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3002`. It uses port 3002 so it can run next to the other sites (planner 3000, links 3001, electives 3003); in development the switcher points to those.
+Open `http://localhost:3002`. It uses port 3002 so it can run next to the other sites (planner 3000, links 3001, electives 3003, hub 3004); in development the switcher points to those.
 
 ## Course data
 
@@ -46,6 +46,12 @@ Some things are left out of the diagram but still appear in the official text on
 
 Where the sources disagree (e.g. EE 121's text says CS 170 but its rule says CS 70), the course shows a note. New courses fall back to a best-effort parse and are flagged for review.
 
-The data is also served at [`/courses.json`](https://eecs-prereqs.vercel.app/courses.json), which EECS Electives syncs from.
+The data is also served at [`/courses.json`](https://eecs-prereqs.vercel.app/courses.json), which EECS Electives and the EECS Hub sync from.
+
+A GitHub Action (`.github/workflows/refresh-course-data.yml`) runs all three steps on the 1st of every month and opens a pull request with what changed, any new courses that need a `MANUAL` entry, and whether the site still builds. To let it open pull requests, enable **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests**. You can also run it any time from the Actions tab.
+
+## Settings
+
+`NEXT_PUBLIC_FEEDBACK_URL` (optional) is a Google Form link; when it's set, the footer shows a "💬 Send feedback" button. Visits are counted with [Vercel Web Analytics](https://vercel.com/docs/analytics) (no cookies); turn it on under the project's **Analytics** tab.
 
 This is an unofficial student tool. Always confirm prerequisites with the Class Schedule or your advisor.

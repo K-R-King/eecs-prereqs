@@ -1,0 +1,101 @@
+name: Refresh course data
+
+# Once a month, re-read every course from the EECS course pages and the Berkeley catalog. Opens a
+# pull request to review (nothing changes on its own); merging it also updates the "checked" date.
+# Needs: Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+
+on:
+  schedule:
+    - cron: "0 15 1 * *"  # the 1st of every month
+  workflow_dispatch:       # or run it by hand from the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Re-read the EECS course pages
+        run: python scripts/fetch_courses.py
+
+      # the catalog is read through a headless browser, which can fail; the last catalog.json is kept then
+      - name: Re-read the Berkeley catalog
+        id: catalog
+        continue-on-error: true
+        run: |
+          npx playwright install --with-deps chromium
+          node scripts/fetch_catalog.mjs
+
+      - name: Check the courses against the catalog
+        run: python scripts/fetch_courses.py | tee refresh-log.txt
+
+      # pull requests opened by this workflow don't trigger other workflows, so build here and report in the PR
+      - name: Build the site with the new data
+        id: build
+        continue-on-error: true
+        run: npm run build 2>&1 | tail -20 | tee build-log.txt; test ${PIPESTATUS[0]} -eq 0
+
+      - name: Write the pull request description
+        run: |
+          {
+            echo "Monthly refresh of \`data/courses.json\` from the [EECS course pages](https://www2.eecs.berkeley.edu/Courses/) and the [Berkeley catalog](https://undergraduate.catalog.berkeley.edu/courses)."
+            echo
+            if [ "${{ steps.build.outcome }}" = "success" ]; then
+              echo "✅ The site builds with the new data."
+            else
+              echo "❌ **The site doesn't build with the new data.** Check the build output below before merging."
+            fi
+            if [ "${{ steps.catalog.outcome }}" != "success" ]; then
+              echo
+              echo "⚠️ Couldn't read the Berkeley catalog this time, so prerequisites were checked against last month's copy."
+            fi
+            new=$(grep -c "not reviewed yet" refresh-log.txt || true)
+            if [ "$new" -gt 0 ]; then
+              echo
+              echo "🆕 **$new course(s) have no hand-reviewed prerequisites yet.** Add them to \`MANUAL\` in \`scripts/fetch_courses.py\`:"
+              echo
+              echo '```'
+              grep "not reviewed yet" refresh-log.txt
+              echo '```'
+            fi
+            echo
+            echo "Review the changed prerequisites in the diff (the \`prereq_text\` field shows Berkeley's wording). Once merged, EECS Electives and the EECS Hub pick up the new data within a week."
+            echo
+            echo "<details><summary>Refresh output</summary>"
+            echo
+            echo '```'
+            cat refresh-log.txt
+            echo '```'
+            echo "</details>"
+            echo
+            echo "<details><summary>Build output</summary>"
+            echo
+            echo '```'
+            cat build-log.txt
+            echo '```'
+            echo "</details>"
+          } > pr-body.md
+          rm refresh-log.txt build-log.txt
+
+      - uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          branch: refresh-course-data
+          commit-message: Refresh course data from the EECS course pages and Berkeley catalog
+          title: Monthly course data refresh
+          body-path: pr-body.md
+          add-paths: |
+            data/courses.json
+            data/catalog.json
+          delete-branch: true
