@@ -19,7 +19,7 @@ const PREVIEW_CHAIN = [
 const STATS = [
   { value: String(EECS_COURSES.length), label: "EECS courses" },
   { value: String(PREREQ_LINKS), label: "prerequisite links" },
-  { value: String(OUTSIDE_COURSES.length), label: "math & physics" },
+  { value: String(OUTSIDE_COURSES.length), label: "outside EECS" },
   { value: "Official", label: "from EECS pages" },
 ];
 

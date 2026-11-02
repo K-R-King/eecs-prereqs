@@ -1,0 +1,2007 @@
+{
+  "checked": "2026-11-02",
+  "courses": {
+    "CS10": {
+      "catalogCode": "COMPSCI 10",
+      "title": "The Beauty and Joy of Computing",
+      "rules": []
+    },
+    "CS150": {
+      "catalogCode": "COMPSCI 150",
+      "title": "Components and Design Techniques for Digital Systems",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Requirement",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C",
+                "unknown:1064551"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS152": {
+      "catalogCode": "COMPSCI 152",
+      "title": "Computer Architecture and Engineering",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61C.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS160": {
+      "catalogCode": "COMPSCI 160",
+      "title": "User Interface Design and Development",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 61B or COMPSCI 61BL.",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCI61BL",
+                "COMPSCI61B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS161": {
+      "catalogCode": "COMPSCI 161",
+      "title": "Computer Security",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B, COMPSCI 61C, and COMPSCI 70.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C",
+                "COMPSCI70",
+                "COMPSCI61B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS162": {
+      "catalogCode": "COMPSCI 162",
+      "title": "Operating Systems and System Programming",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B, COMPSCI 61C, and COMPSCI 70.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C",
+                "COMPSCI61B",
+                "COMPSCI70"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS164": {
+      "catalogCode": "COMPSCI 164",
+      "title": "Programming Languages and Compilers",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B and COMPSCI 61C.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61B",
+                "COMPSCI61C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS168": {
+      "catalogCode": "COMPSCI 168",
+      "title": "Introduction to the Internet: Architecture and Protocols",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61B"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61C is recommended.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS169A": {
+      "catalogCode": "COMPSCI 169A",
+      "title": "Introduction to Software Engineering",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI C88C or DATA C88C or COMPSCI 61A or COMPSCI 47A",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCIC88C",
+                "DATAC88C",
+                "COMPSCI61A",
+                "COMPSCI47A"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 61B or COMPSCI 61BL or COMPSCI 47B",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCI61B",
+                "COMPSCI61BL",
+                "COMPSCI47B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS169L": {
+      "catalogCode": "COMPSCI 169L",
+      "title": "Software Engineering Team Project",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 169A or COMPSCI W169A",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "unknown:1598231",
+                "COMPSCI169A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS170": {
+      "catalogCode": "COMPSCI 170",
+      "title": "Efficient Algorithms and Intractable Problems",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B and COMPSCI 70.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI70",
+                "COMPSCI61B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS171": {
+      "catalogCode": "COMPSCI 171",
+      "title": "Cryptography",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 70",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI70"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS172": {
+      "catalogCode": "COMPSCI 172",
+      "title": "Computability and Complexity",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 170",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI170"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS174": {
+      "catalogCode": "COMPSCI 174",
+      "title": "Combinatorics and Discrete Probability",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 170",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI170"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS176": {
+      "catalogCode": "COMPSCI 176",
+      "title": "Algorithms for Computational Biology",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 70 and COMPSCI 170;",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI170",
+                "COMPSCI70"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Experience programming in a language such as C, C++, Java, or Python.",
+          "groups": []
+        }
+      ]
+    },
+    "CS180": {
+      "catalogCode": "COMPSCI 180",
+      "title": "Intro to Computer Vision and Computational Photography",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "COMPSCI 61B; MATH 53; and MATH 54, MATH 56, MATH 110, or ELENG 66. COMPSCI C182 or COMPSCI 189 should be taken as a co-requisite.",
+          "groups": []
+        }
+      ]
+    },
+    "CS184": {
+      "catalogCode": "COMPSCI 184",
+      "title": "Foundations of Computer Graphics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61B"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "MATH 54 OR MATH 110",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "MATH54",
+                "MATH110"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Ability to write medium-to-large programs in C++. The course includes intensive programming assignments requiring manual memory management, debugging, and performance tuning.\nLinear Algebra: Matrix and vector operations, dot/cross products, transformations, eigenvectors.\nCalculus: Differentiation and integration, particularly in the context of curves and lighting models.\nTrigonometry: Especially in camera models, projection, and shading.",
+          "groups": []
+        }
+      ]
+    },
+    "CS185": {
+      "catalogCode": "COMPSCI 185",
+      "title": "Deep Reinforcement Learning, Decision Making, and Control",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "CS189/289A or equivalent is a prerequisite for the course. This course will assume some familiarity with reinforcement learning, numerical optimization and machine learning, as well as a basic working knowledge of how to train deep neural networks (which is taught in CS182 and briefly covered in CS189).",
+          "groups": []
+        }
+      ]
+    },
+    "CS186": {
+      "catalogCode": "COMPSCI 186",
+      "title": "Introduction to Database Systems",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 61C or COMPSCI 47C",
+          "notes": "COMPSCI 47C may be taken as a co-requisite for transfer students.",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCI47C",
+                "COMPSCI61C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS188": {
+      "catalogCode": "COMPSCI 188",
+      "title": "Introduction to Artificial Intelligence",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61A, COMPSCI 61B, and COMPSCI 70.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI70",
+                "COMPSCI61B",
+                "COMPSCI61A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS189": {
+      "catalogCode": "COMPSCI 189",
+      "title": "Introduction to Machine Learning",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "MATH 53 and MATH 54; and COMPSCI 70 or consent of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI70",
+                "MATH54",
+                "MATH53"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS195": {
+      "catalogCode": "COMPSCI 195",
+      "title": "Social Implications of Computer Technology",
+      "rules": []
+    },
+    "CS47A": {
+      "catalogCode": "COMPSCI 47A",
+      "title": "Completion of Work in Computer Science 61A",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61B, COMPSCI 9D, and consent of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61B",
+                "unknown:1044421"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS47B": {
+      "catalogCode": "COMPSCI 47B",
+      "title": "Completion of Work in Computer Science 61B",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "A course in data structures, COMPSCI 9G, and consent of instructor.",
+          "groups": []
+        }
+      ]
+    },
+    "CS47C": {
+      "catalogCode": "COMPSCI 47C",
+      "title": "Completion of Work in Computer Science 61C",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Experience with assembly language including writing an interrupt handler, COMPSCI 9C, and consent of instructor.",
+          "groups": []
+        }
+      ]
+    },
+    "CS61A": {
+      "catalogCode": "COMPSCI 61A",
+      "title": "The Structure and Interpretation of Computer Programs",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "MATH 1A (may be taken concurrently) or Math 10A or Math 16A. ",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "unknown:1144961",
+                "MATH10A",
+                "MATH16A"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Programming experience equivalent to that gained from a score of 3 or above on the Advanced Placement Computer Science exam.",
+          "groups": []
+        }
+      ]
+    },
+    "CS61B": {
+      "catalogCode": "COMPSCI 61B",
+      "title": "Data Structures",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 61A, COMPSCI 88, or ENGIN 7.",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCI61A",
+                "unknown:1253641",
+                "ENGIN7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS61BL": {
+      "catalogCode": "COMPSCI 61BL",
+      "title": "Data Structures and Programming Methodology",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 61A, COMPSCI 88, or ENGIN 7.",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCI61A",
+                "unknown:1253641",
+                "ENGIN7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CS61C": {
+      "catalogCode": "COMPSCI 61C",
+      "title": "Great Ideas of Computer Architecture (Machine Structures)",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61A",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61A"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "COMPSCI 61B or 61BL, or programming experience equivalent to that gained in 9C, 9F, or 9G.",
+          "groups": []
+        }
+      ]
+    },
+    "CS70": {
+      "catalogCode": "COMPSCI 70",
+      "title": "Discrete Mathematics and Probability Theory",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Sophomore mathematical maturity, and programming experience equivalent to that gained in 3 or the Advanced Placement Computer Science A course.",
+          "groups": []
+        }
+      ]
+    },
+    "CSC100": {
+      "catalogCode": "COMPSCI C100",
+      "title": "Principles & Techniques of Data Science",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "DATA C8 or STAT 20 with a C- or better, or Pass; and COMPSCI 61A, COMPSCI/DATA C88C, or ENGIN 7 with a C- or better, or Pass; Corequisite: MATH 54, 56, 110, ELENG 66, PHYSICS 89 or equivalent linear algebra (C- or better, or Pass, required if completed prior to Data C100).",
+          "groups": []
+        }
+      ]
+    },
+    "CSC177": {
+      "catalogCode": "COMPSCI C177",
+      "title": "Algorithmic Economics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Students should be comfortable with formal mathematical proofs, and will be expected to write proofs on their own.",
+          "groups": []
+        }
+      ]
+    },
+    "CSC182": {
+      "catalogCode": "COMPSCI C182",
+      "title": "Designing, Visualizing and Understanding Deep Neural Networks",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "MATH 53, MATH 54, and COMPSCI 61B",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH53",
+                "MATH54",
+                "COMPSCI61B"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI 70 or STAT 134",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "COMPSCI70",
+                "STAT134"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 189 is recommended.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI189"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CSC187": {
+      "catalogCode": "COMPSCI C187",
+      "title": "Data Engineering",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "COMPSCI 61B, or INFO 206B, or equivalent courses in programming with a C- or better, or Pass; and COMPSCI C100 / DATA C100 / STAT C100, or COMPSCI 189, or INFO 251, or DATA 144, or equivalent upper-division course in data science with a C- or better, or Pass.",
+          "groups": []
+        }
+      ]
+    },
+    "CSC191": {
+      "catalogCode": "COMPSCI C191",
+      "title": "Introduction to Quantum Computing",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Linear Algebra (ELENG 66 or PHYSICS 89 or MATH 54) AND either discrete mathematics (COMPSCI 70 or MATH 55), or quantum mechanics (PHYSICS 7C or PHYSICS 137A or CHEM 120A).",
+          "groups": []
+        }
+      ]
+    },
+    "DATA8": {
+      "catalogCode": "DATA C8",
+      "title": "Foundations of Data Science",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "This course may be taken on its own, but students are encouraged to take it concurrently with a data science connector course (numbered 88 in a range of departments).",
+          "groups": []
+        }
+      ]
+    },
+    "CSC88C": {
+      "catalogCode": "COMPSCI C88C",
+      "title": "Computational Structures in Data Science",
+      "rules": []
+    },
+    "EE105": {
+      "catalogCode": "ELENG 105",
+      "title": "Microelectronic Devices and Circuits",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 66 AND ELENG 64.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE108": {
+      "catalogCode": "ELENG 108",
+      "title": "Introduction to Electric Power and Renewable Energy",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "MATH 54; PHYSICS 7B, ELENG 66; ELENG 64; and a basic working knowledge of RLC circuits.",
+          "groups": []
+        }
+      ]
+    },
+    "EE113": {
+      "catalogCode": "ELENG 113",
+      "title": "Power Electronics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 108",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG108"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE113B": {
+      "catalogCode": "ELENG 113B",
+      "title": "Power Electronics Design",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 113",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG113"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE117": {
+      "catalogCode": "ELENG 117",
+      "title": "Electromagnetic Fields and Waves",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64, MATH 53, and MATH 54; PHYSICS 7B or equivalent that covers AC circuits and electromagnetics up to Maxwell's equations.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG64",
+                "MATH53",
+                "MATH54",
+                "PHYSICS7B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE117B": {
+      "catalogCode": "ELENG 117B",
+      "title": "Microwave and Wireless Measurements",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Requirement",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG117"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE118": {
+      "catalogCode": "ELENG 118",
+      "title": "Introduction to Optical Engineering",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "MATH 53; ELENG 64 and ELENG 66, or MATH 54.",
+          "groups": []
+        }
+      ]
+    },
+    "EE120": {
+      "catalogCode": "ELENG 120",
+      "title": "Signals and Systems",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64 AND ELENG 66",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE121": {
+      "catalogCode": "ELENG 121",
+      "title": "Introduction to Digital Communications",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64, ELENG 66, and COMPSCI 170",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64",
+                "COMPSCI70"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Strongly Recommended",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG120"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE122": {
+      "catalogCode": "ELENG 122",
+      "title": "Introduction to Communication Networks",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 70",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI70"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE123": {
+      "catalogCode": "ELENG 123",
+      "title": "Digital Signal Processing",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 120",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG120"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE130": {
+      "catalogCode": "ELENG 130",
+      "title": "Integrated-Circuit Devices",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64 and ELENG 66",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE134": {
+      "catalogCode": "ELENG 134",
+      "title": "Fundamentals of Photovoltaic Devices",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "ELENG 66 and ELENG 64; or Math 54 and Physics 7B; or equivalent",
+          "groups": []
+        }
+      ]
+    },
+    "EE137A": {
+      "catalogCode": "ELENG 137A",
+      "title": "Introduction to Electric Power Systems",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Introduction to electric power and renewable energy (ELENG 108).",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG108"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE140": {
+      "catalogCode": "ELENG 140",
+      "title": "Linear Integrated Circuits",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 105",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG105"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE141": {
+      "catalogCode": "ELENG 141",
+      "title": "Introduction to Digital Integrated Circuits",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 40",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "unknown:1064551"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 105 and COMPSCI 150 recommended",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG105",
+                "COMPSCI150"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE142": {
+      "catalogCode": "ELENG 142",
+      "title": "Integrated Circuits for Communications",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64, ELENG 66 and ELENG 105.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64",
+                "ELENG105"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE143": {
+      "catalogCode": "ELENG 143",
+      "title": "Microfabrication Technology",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "PHYSICS 7B",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "PHYSICS7B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE147": {
+      "catalogCode": "ELENG 147",
+      "title": "Introduction to Microelectromechanical Systems (MEMS)",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64 and ELENG 66",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE156": {
+      "catalogCode": "ELENG 156",
+      "title": "Business and Finance for Engineers",
+      "rules": []
+    },
+    "EE192": {
+      "catalogCode": "ELENG 192",
+      "title": "Mechatronic Design Laboratory",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64, ELENG 66, COMPSCI 61A, COMPSCI 61B, COMPSCI 61C, and ELENG 120.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG64",
+                "ELENG120",
+                "COMPSCI61C",
+                "COMPSCI61B",
+                "COMPSCI61A",
+                "ELENG66"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE64": {
+      "catalogCode": "ELENG 64",
+      "title": "Introduction to Circuits & Devices",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Requirement",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH54"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EE66": {
+      "catalogCode": "ELENG 66",
+      "title": "Introduction to Signals, Dynamics, and Information",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Requirement",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH54"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EEC106A": {
+      "catalogCode": "EECS C106A",
+      "title": "Introduction to Robotics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Familiarity with linear algebra at the level of ELENG 64/ELENG 66 or Math 54. Experience coding in python at the level of COMPSCI 61A. Preferred: experience developing software at the level of COMPSCI 61B and experience using Linux.",
+          "groups": []
+        }
+      ]
+    },
+    "EEC106B": {
+      "catalogCode": "EECS C106B",
+      "title": "Robotic Manipulation and Interaction",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "EECS C106A / BIO ENG C106A / MEC ENG C106A / EECS C206A or an equivalent course. ",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "EECSC106A",
+                "BIOENGC106A",
+                "MECENGC106A",
+                "EECSC206A"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "A strong programming background, knowledge of Python and Matlab, and some coursework in feedback controls (such as EL ENG C128 / MEC ENG C134) are also useful. Students who have not taken the prerequisite course should have a strong programming background, knowledge of Python and Matlab, and exposure to linear algebra, Lagrangian dynamics, and feedback controls at the intermediate level.",
+          "groups": []
+        }
+      ]
+    },
+    "EECS116": {
+      "catalogCode": "EECS 116",
+      "title": "Probabilistic and Learning-Based Navigation for Physical AI",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "Requirement",
+          "notes": "<p>Or an equivalent course. A strong programming background, knowledge of Python and Matlab, and some coursework in feedback controls and dynamical systems or preliminary knowledge of probability are also useful.</p>",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "EECSC106A",
+                "BIOENGC106A",
+                "MECENGC106A",
+                "EECSC206A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS126": {
+      "catalogCode": "EECS 126",
+      "title": "Probability and Random Processes",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 70 preferred but not required.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI70"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Familiarity with linear algebra.",
+          "groups": []
+        }
+      ]
+    },
+    "EECS127": {
+      "catalogCode": "EECS 127",
+      "title": "Optimization Models in Engineering",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64 and ELENG 66, or consent of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS144": {
+      "catalogCode": "EECS 144",
+      "title": "Introduction to Design Automation",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 66 and CS 70",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG16A",
+                "COMPSCI70"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64 and CS 61C strongly recommended",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG64",
+                "COMPSCI61C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS149": {
+      "catalogCode": "EECS 149",
+      "title": "Introduction to Embedded and Cyber Physical Systems",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61C and COMPSCI 70; ELENG 66 and ELENG 66, or permission of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C",
+                "COMPSCI70",
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS151": {
+      "catalogCode": "EECS 151",
+      "title": "Introduction to Digital Design and Integrated Circuits",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 66 and ELENG 64.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS151LA": {
+      "catalogCode": "EECS 151LA",
+      "title": "Application Specific Integrated Circuits Laboratory",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "COMPSCI 61C, ELENG 66, ELENG 64, and ELENG 105.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C",
+                "ELENG66",
+                "ELENG64",
+                "ELENG105"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS151LB": {
+      "catalogCode": "EECS 151LB",
+      "title": "Field-Programmable Gate Array Laboratory",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 64, ELENG 66, and COMPSCI 61C",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI61C",
+                "ELENG66",
+                "ELENG64"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "ELENG 105 recommended.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG105"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS183": {
+      "catalogCode": "EECS 183",
+      "title": "Natural Language Processing",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "COMPSCI C182, COMPSCI 188, or COMPSCI 189",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCIC182"
+              ]
+            },
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI188"
+              ]
+            },
+            {
+              "logic": "and",
+              "courses": [
+                "COMPSCI189"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EECS47F": {
+      "catalogCode": "EECS 47F",
+      "title": "Completion of work in Computer Science 70",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Sophomore mathematical maturity, programming experience equivalent to that gained in COMPSCI 61A, a prior college level course on discrete math and/or probability, and consent of the instructor.",
+          "groups": []
+        }
+      ]
+    },
+    "EECSC128": {
+      "catalogCode": "EECS C128",
+      "title": "Invitation to Intelligent Control",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Requirement 1",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "ELENG66"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Linear algebra (such as Math 110) and ELENG 120. ELENG 120 can be taken concurrently.",
+          "groups": []
+        }
+      ]
+    },
+    "EECSC191A": {
+      "catalogCode": "EECS C191A",
+      "title": "Introduction to Quantum Computing I",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "Requirement 1",
+          "notes": "<p>Or equivalent.</p>",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "ELENG66",
+                "PHYSICS89",
+                "MATH54"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Some background in either quantum mechanics (Physics 137A, Chemistry 120A, or equivalent) or discrete mathematics (CS 70, Math 55, or equivalent) is expected.",
+          "groups": []
+        }
+      ]
+    },
+    "EECSC191B": {
+      "catalogCode": "EECS C191B",
+      "title": "Introduction to Quantum Computing II",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "C191A or equivalent (with permission of instructor)",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "PHYSICSC191A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MATH54": {
+      "catalogCode": "MATH 54",
+      "title": "Linear Algebra and Differential Equations",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Mathematics 52 (previously 1B or N1B), 10B, or N10B.",
+          "groups": []
+        }
+      ]
+    },
+    "MATH52": {
+      "catalogCode": "MATH 52",
+      "title": "Calculus II",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "MATH 51.",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "MATH51",
+                "unknown:1145001"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MATH51": {
+      "catalogCode": "MATH 51",
+      "title": "Calculus I",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Three and one-half years of high school math, including trigonometry and analytic geometry. Students with high school exam credits (such as AP credit) should consider choosing a course more advanced than 51.",
+          "groups": []
+        }
+      ]
+    },
+    "PHYS89": {
+      "catalogCode": "PHYSICS 89",
+      "title": "Introduction to Mathematical Physics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Math 53 or instructor's consent",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH53"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "PHYSICS 5A or 7A (can be taken concurrently), or instructor consent",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "PHYSICS5A",
+                "PHYSICS7A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PHYS7A": {
+      "catalogCode": "PHYSICS 7A",
+      "title": "Physics for Scientists and Engineers",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Math 51; Math 52 (which may be taken concurrently).",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH51",
+                "MATH52"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "High school physics",
+          "groups": []
+        }
+      ]
+    },
+    "MATH53": {
+      "catalogCode": "MATH 53",
+      "title": "Multivariable Calculus",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "MATH 52",
+          "notes": "Previously offered as 1B or N1B",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH52"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PHYS7B": {
+      "catalogCode": "PHYSICS 7B",
+      "title": "Physics for Scientists and Engineers",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "PHYSICS 7A, Math 51-52, Math 53 (may be taken concurrently).",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "PHYSICS7A",
+                "MATH51",
+                "MATH52",
+                "MATH53"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CHEM120A": {
+      "catalogCode": "CHEM 120A",
+      "title": "Physical Chemistry",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "CHEM 4B or equivalent",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "CHEM4B"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "Physics 7B or 8B",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "PHYSICS7B",
+                "PHYSICS8B"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Mathematics 53; Mathematics 54 or consent of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH53"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Prerequisite",
+          "notes": "Or consent of instructor",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH54"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PHYS137A": {
+      "catalogCode": "PHYSICS 137A",
+      "title": "Quantum Mechanics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Physics 5A, 5B, 5C or 7A, 7B, 7C",
+          "groups": []
+        }
+      ]
+    },
+    "PHYS7C": {
+      "catalogCode": "PHYSICS 7C",
+      "title": "Physics for Scientists and Engineers",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "Requirement",
+          "notes": "<p>7A-7B, Math 51-52, Math 53, Math 54 or Physics 89 minimum grade required:  C-, Passed (P) or higher</p>",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "PHYSICS7A",
+                "PHYSICS7B"
+              ]
+            },
+            {
+              "logic": "and",
+              "courses": [
+                "MATH51",
+                "MATH52"
+              ]
+            },
+            {
+              "logic": "and",
+              "courses": [
+                "MATH53"
+              ]
+            },
+            {
+              "logic": "or",
+              "courses": [
+                "MATH54",
+                "PHYSICS89"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MATH55": {
+      "catalogCode": "MATH 55",
+      "title": "Discrete Mathematics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Mathematical maturity appropriate to a sophomore math class. 51(previously 1A)-52(previously 1B) recommended.",
+          "groups": []
+        }
+      ]
+    },
+    "DATA144": {
+      "catalogCode": "DATA 144",
+      "title": "Data Mining and Analytics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "Corequisite: Data/CompSci/Stat C100 (C- or better, or Pass, required if completed prior to Data 144).",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "STATC100",
+                "COMPSCIC100",
+                "DATAC100"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "INFO251": {
+      "catalogCode": "INFO 251",
+      "title": "Applied Machine Learning",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "INFO 206B, or equivalent course in Python programming; or permission of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "INFO206B"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "INFO 271B, or equivalent graduate-level course in statistics or econometrics; or permission of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "INFO271B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "INFO206B": {
+      "catalogCode": "INFO 206B",
+      "title": "Introduction to Data Structures and Analytics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "INFO 206A or equivalent, or permission of instructor.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "unknown:1",
+                "INFO206A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "STAT134": {
+      "catalogCode": "STAT 134",
+      "title": "Concepts of Probability",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "One year of calculus.",
+          "groups": []
+        }
+      ]
+    },
+    "MATH110": {
+      "catalogCode": "MATH 110",
+      "title": "Abstract Linear Algebra",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "MATH 54 or 56",
+          "notes": "Or a course with equivalent linear algebra content. ",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "MATH54",
+                "MATH56"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "55 or 74",
+          "notes": "Or an equivalent exposure to proofs is recommended.",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "MATH55",
+                "MATH74"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MATH74": {
+      "catalogCode": "MATH 74",
+      "title": "Transition to Upper Division Mathematics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAllOf",
+          "text": "MATH 53 and 54.",
+          "groups": [
+            {
+              "logic": "and",
+              "courses": [
+                "MATH54",
+                "MATH53"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MATH56": {
+      "catalogCode": "MATH 56",
+      "title": "Linear Algebra",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "Math 52 (previously known as Math 1B or N1B), 10B, or N10B. [N is the summer version]",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "MATH10B",
+                "unknown:1145001",
+                "unknown:1575491",
+                "unknown:1575641",
+                "MATH52"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ENGIN7": {
+      "catalogCode": "ENGIN 7",
+      "title": "Introduction to Computer Programming and Numerical Methods",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "completedAnyOf",
+          "text": "MATH 52 (may be taken concurrently).",
+          "groups": [
+            {
+              "logic": "or",
+              "courses": [
+                "MATH52",
+                "unknown:1145001"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "STAT20": {
+      "catalogCode": "STAT 20",
+      "title": "Introduction to Probability and Statistics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "MATH 1A, MATH 16A, MATH 10A/10B, MATH 51 or consent of instructor.",
+          "groups": []
+        }
+      ]
+    },
+    "MATH10A": {
+      "catalogCode": "MATH 10A",
+      "title": "Methods of Mathematics: Calculus, Statistics, and Combinatorics",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Three and one-half years of high school math, including trigonometry and analytic geometry.",
+          "groups": []
+        }
+      ]
+    },
+    "MATH16A": {
+      "catalogCode": "MATH 16A",
+      "title": "Analytic Geometry and Calculus",
+      "rules": [
+        {
+          "type": "Prerequisite",
+          "condition": "freeformText",
+          "text": "Three years of high school math, including trigonometry. Consult the mathematics department for details.",
+          "groups": []
+        }
+      ]
+    }
+  }
+}
