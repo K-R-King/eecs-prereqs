@@ -9,7 +9,8 @@ See what every undergraduate EECS course needs first, the full chain back to you
 - **What it unlocks:** every course that lists it as a prerequisite.
 - **Ready to take it?** Mark the courses you've taken and every course shows whether you've met its prerequisites. Filter to "only what I can take". Saved in your browser.
 - **Search and filters:** by code, name, or area (e.g. "machine learning"), lower or upper division, department, and related area. Press `/` to search, `Enter` to open the first match.
-- **Shareable links:** `#CS170` at the end of the URL opens that course.
+- **What can I take next term?** Every course you're ready for that has been offered in Fall, Spring or Summer, EECS first and the courses that open up the most others at the top. Courses you've moved past (CS 61A after CS 61B) are left out.
+- **Shareable links:** `#CS170` at the end of the URL opens that course, and `#next` opens "What can I take next term?".
 - The official prerequisite text on every course, with links to the Berkeley catalog and the EECS course page, and a note wherever those sources disagree.
 - Light and dark mode, and a layout that works on phones.
 
@@ -24,7 +25,7 @@ Open `http://localhost:3002`. It uses port 3002 so it can run next to the other 
 
 Tests (`npm test`) check the course data (every prerequisite exists, no loops), search, and the link handoff between the sites.
 
-GitHub Actions typechecks, lints, tests and builds the site on every push (`.github/workflows/ci.yml`).
+GitHub Actions typechecks, lints, tests and builds the site on every push (`.github/workflows/ci.yml`). An accessibility check (axe, in Playwright) runs on the course explorer and the next-term list in light and dark mode; run it locally with `npx playwright test` (it starts the dev server, or set `PORT` if 3002 is taken).
 
 ## Course data
 
