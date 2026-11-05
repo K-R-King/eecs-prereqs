@@ -268,11 +268,13 @@ def course(path):
 
 
 def class_hours(formats_text):
-    """Hours per week in class during a regular semester (lecture + discussion + lab), e.g. 4.0."""
+    """Hours per week in class during a regular semester (lecture + discussion + lab), e.g. 4 or 4.5."""
     match = re.search(r"(?:Fall|Spring):(.*?)per week", formats_text or "")
     if not match:
         return None
-    return sum(float(h) for h in re.findall(r"(\d+(?:\.\d+)?) hours?", match.group(1))) or None
+    total = sum(float(h) for h in re.findall(r"(\d+(?:\.\d+)?) hours?", match.group(1)))
+    # whole numbers as 4, not 4.0, the way the sister sites' JavaScript writes them back
+    return (int(total) if total.is_integer() else total) or None
 
 
 def catalog_texts(official):

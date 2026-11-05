@@ -22,6 +22,10 @@ npm run dev
 
 Open `http://localhost:3002`. It uses port 3002 so it can run next to the other sites (planner 3000, links 3001, electives 3003, hub 3004); in development the switcher points to those.
 
+Tests (`npm test`) check the course data (every prerequisite exists, no loops), search, and the link handoff between the sites.
+
+GitHub Actions typechecks, lints, tests and builds the site on every push (`.github/workflows/ci.yml`).
+
 ## Course data
 
 `data/courses.json` is built from two official sources:
@@ -55,3 +59,7 @@ A GitHub Action (`.github/workflows/refresh-course-data.yml`) runs all three ste
 `NEXT_PUBLIC_FEEDBACK_URL` (optional) is a Google Form link; when it's set, the footer shows a "💬 Send feedback" button. Visits are counted with [Vercel Web Analytics](https://vercel.com/docs/analytics) (no cookies); turn it on under the project's **Analytics** tab.
 
 This is an unofficial student tool. Always confirm prerequisites with the Class Schedule or your advisor.
+
+## Across the EECS sites
+
+Courses marked as taken travel with the links between the EECS sites (`?taken=CS61A.CS61B`), so students enter them once. `lib/handoff.ts` and `components/SuiteLinks.tsx` do this and are the same in all five sites; change them in all five. Each site also has a link preview image (`app/opengraph-image.tsx`), a sitemap and a robots file.
