@@ -52,6 +52,13 @@ describe("search", () => {
     expect(matches(COURSES.CS170, "  ")).toBe(true);
     expect(matches(COURSES.CS170, "zzzz")).toBe(false);
   });
+
+  it("understands the catalog's ELENG and COMPSCI names", () => {
+    expect(matches(COURSES.EE39, "eleng 39")).toBe(true);
+    expect(matches(COURSES.EE39, "el eng 39")).toBe(true);
+    expect(matches(COURSES.CS198, "compsci 198")).toBe(true);
+    expect(matches(COURSES.CS39, "eleng 39")).toBe(false);
+  });
 });
 
 describe("seminars, DeCals and special topics", () => {

@@ -71,7 +71,8 @@ export function missingGroups(c: Course, taken: Set<string>) {
 export function matches(c: Course, query: string) {
   const q = query.trim().toLowerCase();
   if (!q) return true;
-  const compact = q.replace(/\s+/g, "");
+  // the catalog and CalCentral say ELENG and COMPSCI; this site says EE and CS
+  const compact = q.replace(/\s+/g, "").replace(/^eleng(?=\d|$)/, "ee").replace(/^compsci(?=\d|$)/, "cs");
   return (
     c.code.toLowerCase().includes(compact) ||
     c.display.toLowerCase().includes(q) ||
