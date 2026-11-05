@@ -77,7 +77,7 @@ export default function ChainDiagram({
 
   if (Object.keys(pos).length === 1) {
     return (
-      <p className="rounded-2xl bg-slate-50 dark:bg-slate-800/60 p-5 text-sm text-slate-500 dark:text-slate-400 ring-1 ring-slate-200 dark:ring-slate-700">
+      <p className="rounded-2xl bg-slate-50 dark:bg-slate-800/60 p-5 text-sm text-slate-600 dark:text-slate-400 ring-1 ring-slate-200 dark:ring-slate-700">
         No course prerequisites, so there&apos;s no chain to show. A great place to start.
       </p>
     );
@@ -136,14 +136,14 @@ export default function ChainDiagram({
                   {done && !selected && <span aria-label="taken">✓</span>}
                   {c.display}
                 </span>
-                <span className={`truncate text-[10px] ${selected ? "text-berkeley/80" : "text-slate-500 dark:text-slate-400"}`}>{c.title}</span>
+                <span className={`truncate text-[10px] ${selected ? "text-berkeley/80" : "text-slate-600 dark:text-slate-400"}`}>{c.title}</span>
               </button>
             );
           })}
         </div>
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
+      <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-600 dark:text-slate-400">
         <Legend dash={undefined} label="required" />
         <Legend dash="6 5" label="one of these" />
         <Legend dash="2 4" label="before or alongside" />

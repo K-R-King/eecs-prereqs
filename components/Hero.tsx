@@ -25,7 +25,7 @@ const STATS = [
 
 export default function Hero() {
   return (
-    <header className="relative overflow-hidden bg-linear-to-br from-berkeley-dark via-berkeley to-[#0b4a7a] px-4 pb-36 text-white">
+    <header className="relative overflow-hidden bg-berkeley bg-linear-to-br from-berkeley-dark via-berkeley to-[#0b4a7a] px-4 pb-36 text-white">
       {/* background: grid + moving glows + floating course codes */}
       <div className="hero-grid pointer-events-none absolute inset-0" />
       <div className="pointer-events-none absolute -top-32 -left-24 h-96 w-96 animate-aurora rounded-full bg-gold/25 blur-3xl" />

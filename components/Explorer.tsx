@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import ChainDiagram from "@/components/ChainDiagram";
+import NextTerm from "@/components/NextTerm";
 import {
   COURSES, EECS_COURSES, OUTSIDE_COURSES, UNLOCKS, byCode, dept, isUpper, matches, missingGroups, type Course,
 } from "@/lib/courses";
@@ -40,6 +41,8 @@ export default function Explorer() {
   const [readyOnly, setReadyOnly] = useState(false);
   const [taken, setTaken] = useState<string[]>([]);
   const [selected, setSelected] = useState(DEFAULT_COURSE);
+  // "What can I take next term?" (also opened by links to #next)
+  const [showNext, setShowNext] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const detailRef = useRef<HTMLDivElement>(null);
 
@@ -52,6 +55,7 @@ export default function Explorer() {
     setTaken(startTaken);
     storeTaken(startTaken);
     setSelected(codeFromHash() ?? DEFAULT_COURSE);
+    if (window.location.hash.toLowerCase() === "#next") setShowNext(true);
     /* eslint-enable react-hooks/set-state-in-effect */
     const onHash = () => {
       const code = codeFromHash();
@@ -81,6 +85,18 @@ export default function Explorer() {
     history.replaceState(null, "", `#${code}`);
     // on phones the details sit above the list, so bring them back into view
     if (window.innerWidth < 1024) detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // bring the panel into view when it opens
+  useEffect(() => {
+    if (showNext) document.getElementById("next")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [showNext]);
+
+  // a course picked from the panel: show its details (they sit below the panel)
+  function selectFromNext(code: string) {
+    setSelected(code);
+    history.replaceState(null, "", `#${code}`);
+    detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function toggleTaken(code: string) {
@@ -115,7 +131,7 @@ export default function Explorer() {
       <div className="rounded-3xl bg-white dark:bg-slate-900 p-5 shadow-xl shadow-berkeley/10 ring-1 ring-slate-200 dark:ring-slate-700 sm:p-6">
         <label htmlFor="search" className="sr-only">Search courses</label>
         <div className="relative">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" aria-hidden>🔍</span>
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 dark:text-slate-400" aria-hidden>🔍</span>
           <input
             ref={searchRef}
             id="search"
@@ -129,7 +145,7 @@ export default function Explorer() {
             placeholder="Search courses: CS 162, machine learning, circuits…"
             className="w-full rounded-2xl bg-slate-50 dark:bg-slate-800/60 py-3.5 pl-12 pr-14 text-base ring-1 ring-slate-200 dark:ring-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-gold"
           />
-          <kbd className="pointer-events-none absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-md border border-slate-300 dark:border-slate-600 px-2 py-0.5 font-mono text-xs text-slate-500 dark:text-slate-400 sm:block">
+          <kbd className="pointer-events-none absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-md border border-slate-300 dark:border-slate-600 px-2 py-0.5 font-mono text-xs text-slate-600 dark:text-slate-400 sm:block">
             /
           </kbd>
         </div>
@@ -173,21 +189,34 @@ export default function Explorer() {
               <>✨ Mark courses you&apos;ve taken and every course shows whether you&apos;re ready for it.</>
             )}
           </p>
-          {taken.length > 0 && (
-            <div className="flex shrink-0 gap-2">
-              <Chip active={readyOnly} onClick={() => setReadyOnly(!readyOnly)}>Only what I can take</Chip>
-              <button type="button" onClick={clearTaken} className="rounded-full px-3 py-1.5 text-sm font-medium text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100">
-                Clear
-              </button>
-            </div>
-          )}
+          <div className="flex shrink-0 flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => setShowNext(!showNext)}
+              aria-expanded={showNext}
+              aria-controls="next"
+              className="rounded-full bg-gold px-3.5 py-1.5 text-sm font-semibold text-berkeley shadow-md shadow-gold/30 transition hover:-translate-y-0.5"
+            >
+              📅 What can I take next term?
+            </button>
+            {taken.length > 0 && (
+              <>
+                <Chip active={readyOnly} onClick={() => setReadyOnly(!readyOnly)}>Only what I can take</Chip>
+                <button type="button" onClick={clearTaken} className="rounded-full px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100">
+                  Clear
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </div>
+
+      {showNext && <NextTerm taken={takenSet} onSelect={selectFromNext} onClose={() => setShowNext(false)} />}
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[22rem_1fr]">
         {/* course list */}
         <div className="min-w-0">
-          <p className="mb-3 px-1 text-sm text-slate-500 dark:text-slate-400" aria-live="polite">
+          <p className="mb-3 px-1 text-sm text-slate-600 dark:text-slate-400" aria-live="polite">
             {visible.length} course{visible.length === 1 ? "" : "s"}
             {filtered ? " match" : ""}
           </p>
@@ -248,7 +277,7 @@ function Status({ course, taken }: { course: Course; taken: Set<string> }) {
   const missing = missingGroups(course, taken).length;
   return missing === 0
     ? <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">● ready</span>
-    : <span className="text-xs text-slate-500 dark:text-slate-400">🔒 {missing} to go</span>;
+    : <span className="text-xs text-slate-600 dark:text-slate-400">🔒 {missing} to go</span>;
 }
 
 function CourseRow({ course, selected, taken, onSelect }: {
@@ -269,7 +298,7 @@ function CourseRow({ course, selected, taken, onSelect }: {
         <span className="min-w-0 flex-1">
           <span className="flex items-center gap-2">
             <span className={`font-bold ${selected ? "text-gold" : "text-berkeley dark:text-blue-300"}`}>{course.display}</span>
-            {course.units && <span className={`text-xs ${selected ? "text-blue-200" : "text-slate-400"}`}>{course.units}u</span>}
+            {course.units && <span className={`text-xs ${selected ? "text-blue-200" : "text-slate-500 dark:text-slate-400"}`}>{course.units}u</span>}
           </span>
           <span className={`block truncate text-sm ${selected ? "text-blue-100" : "text-slate-600 dark:text-slate-400"}`}>{course.title}</span>
         </span>
@@ -304,14 +333,14 @@ function Groups({ groups, taken, onSelect }: { groups: string[][]; taken: Set<st
       {groups.map((g, i) => (
         <li key={i} className="flex flex-wrap items-center gap-2">
           <span className={`flex h-5 w-5 items-center justify-center rounded-full text-[10px] ${
-            g.some((c) => taken.has(c)) ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-500 dark:bg-slate-700 dark:text-slate-300"
+            g.some((c) => taken.has(c)) ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-600 dark:bg-slate-700 dark:text-slate-300"
           }`} aria-hidden>
             {g.some((c) => taken.has(c)) ? "✓" : i + 1}
           </span>
-          {g.length > 1 && <span className="text-xs font-semibold uppercase tracking-wide text-slate-400">one of</span>}
+          {g.length > 1 && <span className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">one of</span>}
           {g.map((code, j) => (
             <span key={code} className="flex items-center gap-2">
-              {j > 0 && <span className="text-xs text-slate-400">or</span>}
+              {j > 0 && <span className="text-xs text-slate-500 dark:text-slate-400">or</span>}
               <CodeChip code={code} taken={taken} onSelect={onSelect} />
             </span>
           ))}
@@ -386,38 +415,38 @@ function CourseDetail({ course, taken, onSelect, onToggleTaken }: {
 
       <div className="mt-8 grid gap-8 md:grid-cols-2">
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Needs first</h3>
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">Needs first</h3>
           <div className="mt-3">
             {course.prereqs.length
               ? <Groups groups={course.prereqs} taken={taken} onSelect={onSelect} />
-              : <p className="text-sm text-slate-500 dark:text-slate-400">No course prerequisites.</p>}
+              : <p className="text-sm text-slate-600 dark:text-slate-400">No course prerequisites.</p>}
           </div>
           {course.coreqs.length > 0 && (
             <>
-              <h3 className="mt-6 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Before or alongside</h3>
+              <h3 className="mt-6 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">Before or alongside</h3>
               <div className="mt-3"><Groups groups={course.coreqs} taken={taken} onSelect={onSelect} /></div>
             </>
           )}
         </div>
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
             Unlocks {unlocks.length > 0 && <span className="text-gold-dark dark:text-gold">{unlocks.length}</span>}
           </h3>
           <div className="mt-3 flex flex-wrap gap-2">
             {unlocks.length
               ? unlocks.map((c) => <CodeChip key={c.code} code={c.code} taken={taken} onSelect={onSelect} />)
-              : <p className="text-sm text-slate-500 dark:text-slate-400">No courses here list it as a prerequisite.</p>}
+              : <p className="text-sm text-slate-600 dark:text-slate-400">No courses here list it as a prerequisite.</p>}
           </div>
         </div>
       </div>
 
-      <h3 className="mt-10 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Full prerequisite chain</h3>
+      <h3 className="mt-10 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">Full prerequisite chain</h3>
       <div className="mt-3">
         <ChainDiagram code={course.code} taken={taken} onSelect={onSelect} />
       </div>
 
       <div className="mt-8 rounded-2xl border-l-4 border-gold bg-slate-50 dark:bg-slate-800/60 p-4">
-        <p className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Official prerequisites</p>
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">Official prerequisites</p>
         <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">{course.prereq_text || "None listed."}</p>
         {course.note && <p className="mt-2 text-xs text-amber-800 dark:text-amber-200">⚠️ {course.note}</p>}
         <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
