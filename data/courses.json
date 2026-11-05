@@ -15,7 +15,7 @@
         "Education"
       ],
       "description": "An introductory course for students with minimal prior exposure to computer science. Prepares students for future computer science courses and empowers them to utilize programming to solve problems in their field of study. Presents an overview of the history, great principles, and transformative applications of computer science, as well as a comprehensive introduction to programming. Topics include abstraction, recursion, algorithmic complexity, higher-order functions, concurrency, social implications of computing (privacy, education, algorithmic bias), and engaging research areas (data science, AI, HCI). Students will program in Snap! (a friendly graphical language) and Python, and will design and implement two projects of their choice.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS10/",
@@ -56,7 +56,7 @@
         "Computer Architecture & Engineering"
       ],
       "description": "Instruction set architecture, microcoding, pipelining (simple and complex). Memory hierarchies and virtual memory. Processor parallelism: VLIW, vectors, multithreading. Multiprocessors.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "COMPSCI 61C.",
       "prereqs": [
         [
@@ -82,7 +82,7 @@
         "Human-Computer Interaction"
       ],
       "description": "The design, implementation, and evaluation of user interfaces. User-centered design and task analysis. Conceptual models and interface metaphors. Usability inspection and evaluation methods. Analysis of user study data. Input methods (keyboard, pointing, touch, tangible) and input models. Visual design principles. Interface prototyping and implementation methodologies and tools. Students will develop a user interface for a specific task and target user group in teams.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B or COMPSCI 61BL.",
       "prereqs": [
         [
@@ -142,7 +142,7 @@
         "Security"
       ],
       "description": "Basic concepts of operating systems and system programming. Utility programs, subsystems, multiple-program systems. Processes, interprocess communication, and synchronization. Memory allocation, segmentation, paging. Loading and linking, libraries. Resource allocation, scheduling, performance evaluation. File systems, storage devices, I/O systems. Protection, security, and privacy.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B, COMPSCI 61C, and COMPSCI 70.",
       "prereqs": [
         [
@@ -173,7 +173,7 @@
         "Programming Systems"
       ],
       "description": "Survey of programming languages. The design of modern programming languages. Principles and techniques of scanning, parsing, semantic analysis, and code generation. Implementation of compilers, interpreters, and assemblers. Overview of run-time organization and error handling.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B and COMPSCI 61C.",
       "prereqs": [
         [
@@ -200,7 +200,7 @@
       ],
       "areas": [],
       "description": "This course is an introduction to the Internet architecture. We will focus on the concepts and fundamental design principles that have contributed to the Internet's scalability and robustness and survey the various protocols and algorithms used within this architecture. Topics include layering, addressing, intradomain routing, interdomain routing, reliable delivery, congestion control, and the core protocols (e.g., TCP, UDP, IP, DNS, and HTTP) and network technologies (e.g., Ethernet, wireless).",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B. COMPSCI 61C is recommended.",
       "prereqs": [
         [
@@ -224,7 +224,7 @@
       ],
       "areas": [],
       "description": "Ideas and techniques for designing, developing, and modifying large software systems. Service-oriented architecture, behavior-driven design with user stories, cloud computing, test-driven development, automated testing, cost and quality metrics for maintainability and effort estimation, practical performance and security in software operations, design patterns and refactoring, specification and documentation, agile project team organization and management.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI C88C or DATA C88C or COMPSCI 61A or COMPSCI 47A. COMPSCI 61B or COMPSCI 61BL or COMPSCI 47B.",
       "prereqs": [
         [
@@ -255,7 +255,7 @@
       ],
       "areas": [],
       "description": "Open-ended design project enhancing or creating software for real customers in an agile team setting. Teamwork coordination, effective customer meetings, pre- and post-iteration team meetings, running scrums and standups, technical communication. Contributing as a team to an open-source project; tools and workflows associated with open source collaboration, including fork-and-pull, rebase, upstream merge, continuous deployment & integration.",
-      "class_hours": 11.0,
+      "class_hours": 11,
       "prereq_text": "COMPSCI 169A or COMPSCI W169A.",
       "prereqs": [
         [
@@ -282,7 +282,7 @@
         "Theory"
       ],
       "description": "Concept and basic techniques in the design and analysis of algorithms; models of computation; lower bounds; algorithms for optimum search trees, balanced trees and UNION-FIND algorithms; numerical and algebraic algorithms; combinatorial algorithms. Turing machines, how to count steps, deterministic and nondeterministic Turing machines, NP-completeness. Unsolvable and intractable problems.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B and COMPSCI 70.",
       "prereqs": [
         [
@@ -309,7 +309,7 @@
       ],
       "areas": [],
       "description": "Cryptography or cryptology is the science of designing algorithms and protocols for enabling parties to communicate and compute securely in an untrusted environment (e.g. secure communication, digital signature, etc.) Over the last four decades, cryptography has transformed from an ad hoc collection of mysterious tricks into a rigorous science based on firm complexity-theoretic foundations. This modern complexity-theoretic approach to cryptography will be the focus. E.g., in the context of encryption we will begin by giving a precise mathematical definition for what it means to be a secure encryption scheme and then give a construction (realizing this security notion) assuming various computational hardness assumptions (e.g. factoring).",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 70.",
       "prereqs": [
         [
@@ -335,7 +335,7 @@
         "Theory"
       ],
       "description": "Finite automata, Turing machines and RAMs. Undecidable, exponential, and polynomial-time problems. Polynomial-time equivalence of all reasonable models of computation. Nondeterministic Turing machines. Theory of NP-completeness: Cook's theorem, NP-completeness of basic problems. Selected topics in language theory, complexity and randomness.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 170.",
       "prereqs": [
         [
@@ -361,7 +361,7 @@
         "Theory"
       ],
       "description": "Permutations, combinations, principle of inclusion and exclusion, generating functions, Ramsey theory. Expectation and variance, Chebychev's inequality, Chernov bounds. Birthday paradox, coupon collector's problem, Markov chains and entropy computations, universal hashing, random number generation, random graphs and probabilistic existence bounds.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 170.",
       "prereqs": [
         [
@@ -384,7 +384,7 @@
       ],
       "areas": [],
       "description": "Algorithms and probabilistic models that arise in various computational biology applications: suffix trees, suffix arrays, pattern matching, repeat finding, sequence alignment, phylogenetics, genome rearrangements, hidden Markov models, gene finding, motif finding, stochastic context free grammars, RNA secondary structure. There are no biology prerequisites for this course, but a strong quantitative background will be essential.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 70 and COMPSCI 170;. Experience programming in a language such as C, C++, Java, or Python.",
       "prereqs": [
         [
@@ -411,7 +411,7 @@
       ],
       "areas": [],
       "description": "This advanced undergraduate course introduces students to computing with visual data (images and video). We will cover acquisition, representation, and manipulation of visual information from digital photographs (image processing), image analysis and visual understanding (computer vision), and image synthesis (computational photography). Key algorithms will be presented, ranging from classical to contemporary, with an emphasis on using these techniques to build practical systems. The hands-on emphasis will be reflected in the programming assignments, where students will acquire their own images and develop, largely from scratch, image analysis and synthesis tools for real-world applications.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B; MATH 53; and MATH 54, MATH 56, MATH 110, or ELENG 66. COMPSCI C182 or COMPSCI 189 should be taken as a co-requisite.",
       "prereqs": [
         [
@@ -451,7 +451,7 @@
         "Graphics"
       ],
       "description": "A broad introduction to the fundamentals of computer graphics. The main areas covered are modeling, rendering, animation and imaging. Topics include 2D and 3D transformations, drawing to raster displays, sampling, texturing, antialiasing, geometric modeling, ray tracing and global illumination, animation, cameras, image processing and computational imaging. There will be an emphasis on mathematical and geometric aspects of graphics, and the ability to write complete 3D graphics programs.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B. MATH 54 OR MATH 110. Ability to write medium-to-large programs in C++. The course includes intensive programming assignments requiring manual memory management, debugging, and performance tuning. Linear Algebra: Matrix and vector operations, dot/cross products, transformations, eigenvectors. Calculus: Differentiation and integration, particularly in the context of curves and lighting models. Trigonometry: Especially in camera models, projection, and shading.",
       "prereqs": [
         [
@@ -478,7 +478,7 @@
       ],
       "areas": [],
       "description": "This course will cover the intersection of control, reinforcement learning, and deep learning. This course will provide an advanced treatment of the reinforcement learning formalism, the most critical model-free reinforcement learning algorithms (policy gradients, value function and Q-function learning, and actor-critic), a discussion of model-based reinforcement learning algorithms, an overview of imitation learning, and a range of advanced topics, including exploration, model-based learning with video prediction, transfer learning, multi-task learning, and meta-learning. Homework assignments will cover imitation learning, policy gradients, Q-learning, and model-based reinforcement learning, as well as a final project.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "CS189/289A or equivalent is a prerequisite for the course. This course will assume some familiarity with reinforcement learning, numerical optimization and machine learning, as well as a basic working knowledge of how to train deep neural networks (which is taught in CS182 and briefly covered in CS189).",
       "prereqs": [
         [
@@ -503,7 +503,7 @@
         "Database Management Systems"
       ],
       "description": "Access methods and file systems to facilitate data access. Hierarchical, network, relational, and object-oriented data models. Query languages for models. Embedding query languages in programming languages. Database services including protection, integrity control, and alternative views of data. High-level interfaces including application generators, browsers, and report writers. Introduction to transaction processing. Database system implementation to be done as term project.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61C or COMPSCI 47C.",
       "prereqs": [
         [
@@ -562,7 +562,7 @@
         "Artificial Intelligence"
       ],
       "description": "Theoretical foundations, algorithms, methodologies, and applications for machine learning. Topics may include supervised methods for regression and classication (linear models, trees, neural networks, ensemble methods, instance-based methods); generative and discriminative probabilistic models; Bayesian parametric learning; density estimation and clustering; Bayesian networks; time series models; dimensionality reduction; programming projects covering a variety of real-world applications.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "MATH 53 and MATH 54; and COMPSCI 70 or consent of instructor.",
       "prereqs": [
         [
@@ -675,7 +675,7 @@
         "Programming Systems"
       ],
       "description": "An introduction to programming and computer science focused on abstraction techniques as means to manage program complexity. Techniques include procedural abstraction; control abstraction using recursion, higher-order functions, generators, and streams; data abstraction using interfaces, objects, classes, and generic operators; and language abstraction using interpreters and macros. The course exposes students to programming paradigms, including functional, object-oriented, and declarative approaches. It includes an introduction to asymptotic analysis of algorithms. There are several significant programming projects.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "MATH 1A (may be taken concurrently) or Math 10A or Math 16A. Programming experience equivalent to that gained from a score of 3 or above on the Advanced Placement Computer Science exam.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CS61A/",
@@ -703,7 +703,7 @@
         "Programming Systems"
       ],
       "description": "Fundamental dynamic data structures, including linear lists, queues, trees, and other linked structures; arrays strings, and hash tables. Storage management. Elementary principles of software engineering. Abstract data types. Algorithms for sorting and searching. Introduction to the Java programming language.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "COMPSCI 61A, COMPSCI 88, or ENGIN 7.",
       "prereqs": [
         [
@@ -729,7 +729,7 @@
       ],
       "areas": [],
       "description": "The same material as in 61B, but in a laboratory-based format.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "COMPSCI 61A, COMPSCI 88, or ENGIN 7.",
       "prereqs": [
         [
@@ -755,7 +755,7 @@
       ],
       "areas": [],
       "description": "The internal organization and operation of digital computers. Machine architecture, support for high-level languages (logic, arithmetic, instruction sequencing) and operating systems (I/O, interrupts, memory management, process switching). Elements of computer logic design. Tradeoffs involved in fundamental architectural design decisions.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "COMPSCI 61A. COMPSCI 61B or 61BL, or programming experience equivalent to that gained in 9C, 9F, or 9G.",
       "prereqs": [
         [
@@ -802,7 +802,7 @@
       ],
       "areas": [],
       "description": "In this course, students will explore the data science lifecycle, including question formulation, data collection and cleaning, exploratory data analysis and visualization, statistical inference and prediction​, and decision-making.​ This class will focus on quantitative critical thinking​ and key principles and techniques needed to carry out this cycle. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "DATA C8 or STAT 20 with a C- or better, or Pass; and COMPSCI 61A, COMPSCI/DATA C88C, or ENGIN 7 with a C- or better, or Pass; Corequisite: MATH 54, 56, 110, ELENG 66, PHYSICS 89 or equivalent linear algebra (C- or better, or Pass, required if completed prior to Data C100).",
       "prereqs": [
         [
@@ -839,7 +839,7 @@
       ],
       "areas": [],
       "description": "The class provides an introduction to algorithmic questions in economic design. The class will cover problems of public goods and social choice, as well as allocative questions and private consumption. The focus is on normative questions: From the perspective of social goals, these are efficiency, fairness, and equity. In terms of private goals, the focus is on revenue maximization. The course will cover voting, fair division, pricing and market mechanisms. There is an emphasis on the algorithmic questions that arise naturally in economic design.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "Students should be comfortable with formal mathematical proofs, and will be expected to write proofs on their own.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC177/",
@@ -858,7 +858,7 @@
       ],
       "areas": [],
       "description": "Deep Networks have revolutionized computer vision, language technology, robotics and control. They have growing impact in many other areas of science and engineering. They do not however, follow a closed or compact set of theoretical principles. In Yann Lecun's words they require \"an interplay between intuitive insights, theoretical modeling, practical implementations, empirical studies, and scientific analyses.\" This course attempts to cover that ground.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "MATH 53, MATH 54, and COMPSCI 61B. COMPSCI 70 or STAT 134. COMPSCI 189 is recommended.",
       "prereqs": [
         [
@@ -891,7 +891,7 @@
       ],
       "areas": [],
       "description": "This course will cover the principles and practices of managing data at scale, with a focus on use cases in data analysis and machine learning. We will cover the entire life cycle of data management and science, ranging from data preparation to exploration, visualization and analysis, to machine learning and collaboration, with a focus on ensuring reliable, scalable operationalization.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 61B, or INFO 206B, or equivalent courses in programming with a C- or better, or Pass; and COMPSCI C100 / DATA C100 / STAT C100, or COMPSCI 189, or INFO 251, or DATA 144, or equivalent upper-division course in data science with a C- or better, or Pass.",
       "prereqs": [
         [
@@ -951,7 +951,7 @@
       ],
       "areas": [],
       "description": "Foundations of data science from three perspectives: inferential thinking, computational thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, document collections, geographical data, and social networks. It delves into social and legal issues surrounding data analysis, including issues of privacy and data ownership.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "This course may be taken on its own, but students are encouraged to take it concurrently with a data science connector course (numbered 88 in a range of departments).",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC8/",
@@ -971,7 +971,7 @@
       ],
       "areas": [],
       "description": "Development of Computer Science topics appearing in Foundations of Data Science (C8); expands computational concepts and techniques of abstraction. Understanding the structures that underlie the programs, algorithms, and languages used in data science and elsewhere. Mastery of a particular programming language while studying general techniques for managing program complexity, e.g., functional, object-oriented, and declarative programming. Provides practical experience with composing larger systems through several significant programming projects.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC88C/",
@@ -991,7 +991,7 @@
         "Integrated Circuits"
       ],
       "description": "This course covers the fundamental circuit and device concepts needed to understand analog integrated circuits. After an overview of the basic properties of semiconductors, the p-n junction and MOS capacitors are described and the MOSFET is modeled as a large-signal device. Two port small-signal amplifiers and their realization using single stage and multistage CMOS building blocks are discussed. Sinusoidal steady-state signals are introduced and the techniques of phasor analysis are developed, including impedance and the magnitude and phase response of linear circuits. The frequency responses of single and multi-stage amplifiers are analyzed. Differential amplifiers are introduced.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "ELENG 66 AND ELENG 64.",
       "prereqs": [
         [
@@ -1017,7 +1017,7 @@
       ],
       "areas": [],
       "description": "This course is designed to provide an introduction to electric power conversion, distribution, and generation with renewable energy sources. The course will introduce fundamental concepts in the area of electric power, such as complex and reactive power, phasors, impedance, magnetic circuits and transformers, power factor, power quality, three-phase power, ac-dc conversion, and a conceptual overview of renewable energy and the integration of sustainable energy sources on the electric grid. Real world applications, ranging from ground-fault circuit interrupters to residential power distribution and solar photovoltaic dc-ac inverters will be explored in live lecture demonstration.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "MATH 54; PHYSICS 7B, ELENG 66; ELENG 64; and a basic working knowledge of RLC circuits.",
       "prereqs": [
         [
@@ -1049,7 +1049,7 @@
       ],
       "areas": [],
       "description": "Power conversion circuits and techniques. Characterization and design of magnetic devices including transformers, reactors, and electromagnetic machinery. Characteristics of bipolar and MOS power semiconductor devices. Applications to motor control, switching power supplies, lighting, power systems, and other areas as appropriate.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "ELENG 108.",
       "prereqs": [
         [
@@ -1097,7 +1097,7 @@
         "Physical Electronics"
       ],
       "description": "Review of static electric and magnetic fields and applications; Maxwell's equations; transmission lines; propagation and reflection of plane waves; introduction to guided waves, microwave networks, and radiation and antennas. Minilabs on statics, transmission lines, and waves. Explanation of cellphone antennas, WiFi communication, and other wireless technologies.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "ELENG 64, MATH 53, and MATH 54; PHYSICS 7B or equivalent that covers AC circuits and electromagnetics up to Maxwell's equations.",
       "prereqs": [
         [
@@ -1153,7 +1153,7 @@
         "Physical Electronics"
       ],
       "description": "Fundamental principles of optical systems. Geometrical optics and aberration theory. Stops and apertures, prisms, and mirrors. Diffraction and interference. Optical materials and coatings. Radiometry and photometry. Basic optical devices and the human eye. The design of optical systems. Lasers, fiber optics, and holography.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "MATH 53; ELENG 64 and ELENG 66, or MATH 54.",
       "prereqs": [
         [
@@ -1189,7 +1189,7 @@
         "Signal Processing"
       ],
       "description": "Continuous and discrete-time transform analysis techniques with illustrative applications. Linear and time-invariant systems, transfer functions. Fourier series, Fourier transform, Laplace and Z-transforms. Sampling and reconstruction. Solution of differential and difference equations using transforms. Frequency response, Bode plots, stability analysis. Illustrated by analysis of communication systems and feedback control systems.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "ELENG 64 AND ELENG 66.",
       "prereqs": [
         [
@@ -1248,7 +1248,7 @@
         "Operating Systems & Networking"
       ],
       "description": "This course focuses on the fundamentals of the wired and wireless communication networks. The course covers both the architectural principles for making these networks scalable and robust, as well as the key techniques essential for analyzing and designing them. The topics include graph theory, Markov chains, queuing, optimization techniques, the physical and link layers, switching, transport, cellular networks and Wi-Fi.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 70.",
       "prereqs": [
         [
@@ -1274,7 +1274,7 @@
         "Signal Processing"
       ],
       "description": "Discrete time signals and systems: Fourier and Z transforms, DFT, 2-dimensional versions. Digital signal processing topics: flow graphs, realizations, FFT, chirp-Z algorithms, Hilbert transform relations, quantization effects, linear prediction. Digital filter design methods: windowing, frequency sampling, S-to-Z methods, frequency-transformation methods, optimization methods, 2-dimensional filter design.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "ELENG 120.",
       "prereqs": [
         [
@@ -1299,7 +1299,7 @@
         "Physical Electronics"
       ],
       "description": "Overview of electronic properties of semiconductor. Metal-semiconductor contacts, pn junctions, bipolar transistors, and MOS field-effect transistors. Properties that are significant to device operation for integrated circuits. Silicon device fabrication technology.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 64 and ELENG 66.",
       "prereqs": [
         [
@@ -1327,7 +1327,7 @@
         "Physical Electronics"
       ],
       "description": "This course is designed to give an introduction to, and overview of, the fundamentals of photovoltaic devices. Students will learn how solar cells work, understand the concepts and models of solar cell device physics, and formulate and solve relevant physical problems related to photovoltaic devices. Monocrystalline, thin film and third generation solar cells will be discussed and analyzed. Light management and economic considerations in a solar cell system will also be covered.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 66 and ELENG 64; or Math 54 and Physics 7B; or equivalent.",
       "prereqs": [
         [
@@ -1363,7 +1363,7 @@
       ],
       "areas": [],
       "description": "Overview of conventional electric power conversion and delivery, emphasizing a systemic understanding of the electric grid with primary focus at the transmission level, aimed toward recognizing needs and opportunities for technological innovation. Topics include aspects of a.c. system design, electric generators, components of transmission and distribution systems, power flow analysis, system planning and operation, performance measures, and limitations of legacy technologies.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "Introduction to electric power and renewable energy (ELENG 108).",
       "prereqs": [
         [
@@ -1388,7 +1388,7 @@
         "Integrated Circuits"
       ],
       "description": "Single and multiple stage transistor amplifiers. Operational amplifiers. Feedback amplifiers, 2-port formulation, source, load, and feedback network loading. Frequency response of cascaded amplifiers, gain-bandwidth exchange, compensation, dominant pole techniques, root locus. Supply and temperature independent biasing and references. Selected applications of analog circuits such as analog-to-digital converters, switched capacitor filters, and comparators. Hardware laboratory and design project.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "ELENG 105.",
       "prereqs": [
         [
@@ -1429,7 +1429,7 @@
         "Integrated Circuits"
       ],
       "description": "Analysis and design of electronic circuits for communication systems, with an emphasis on integrated circuits for wireless communication systems. Analysis of noise and distortion in amplifiers with application to radio receiver design. Power amplifier design with application to wireless radio transmitters. Radio-frequency mixers, oscillators, phase-locked loops, modulators, and demodulators.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "ELENG 64, ELENG 66 and ELENG 105.",
       "prereqs": [
         [
@@ -1460,7 +1460,7 @@
         "Physical Electronics"
       ],
       "description": "Integrated circuit device fabrication and surface micromachining technology. Thermal oxidation, ion implantation, impurity diffusion, film deposition, expitaxy, lithography, etching, contacts and interconnections, and process integration issues. Device design and mask layout, relation between physical structure and electrical/mechanical performance. MOS transistors and poly-Si surface microstructures will be fabricated in the laboratory and evaluated.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "PHYSICS 7B.",
       "prereqs": [
         [
@@ -1485,7 +1485,7 @@
         "Micro/Nano Electro Mechanical Systems"
       ],
       "description": "This course will teach fundamentals of micromachining and microfabrication techniques, including planar thin-film process technologies, photolithographic techniques, deposition and etching techniques, and the other technologies that are central to MEMS fabrication. It will pay special attention to teaching of fundamentals necessary for the design and analysis of devices and systems in mechanical, electrical, fluidic, and thermal energy/signal domains, and will teach basic techniques for multi-domain analysis. Fundamentals of sensing and transduction mechanisms including capacitive and piezoresistive techniques, and design and analysis of micmicromachined miniature sensors and actuators using these techniques will be covered.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 64 and ELENG 66.",
       "prereqs": [
         [
@@ -1616,7 +1616,7 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "An introduction to the kinematics, dynamics, and control of robot manipulators, robotic vision, and sensing. The course covers forward and inverse kinematics of serial chain manipulators, the manipulator Jacobian, force relations, dynamics, and control. It presents elementary principles on proximity, tactile, and force sensing, vision sensors, camera calibration, stereo construction, and motion detection. The course concludes with current applications of robotics in active perception, medical robotics, and other areas.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "Familiarity with linear algebra at the level of ELENG 64/ELENG 66 or Math 54. Experience coding in python at the level of COMPSCI 61A. Preferred: experience developing software at the level of COMPSCI 61B and experience using Linux.",
       "prereqs": [
         [
@@ -1647,7 +1647,7 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "This course is a sequel to Electrical Engineering C106A/Bioengineering C125, which covers kinematics, dynamics and control of a single robot. This course will cover dynamics and control of groups of robotic manipulators coordinating with each other and interacting with the environment. Concepts will include an introduction to grasping and the constrained manipulation, contacts and force control for interaction with the environment. We will also cover active perception guided manipulation, as well as the manipulation of non-rigid objects. Throughout, we will emphasize design and human-robot interactions, and applications to applications in manufacturing, service robotics, tele-surgery, and locomotion.",
-      "class_hours": 7.0,
+      "class_hours": 7,
       "prereq_text": "EECS C106A / BIO ENG C106A / MEC ENG C106A / EECS C206A or an equivalent course. A strong programming background, knowledge of Python and Matlab, and some coursework in feedback controls (such as EL ENG C128 / MEC ENG C134) are also useful. Students who have not taken the prerequisite course should have a strong programming background, knowledge of Python and Matlab, and exposure to linear algebra, Lagrangian dynamics, and feedback controls at the intermediate level.",
       "prereqs": [
         [
@@ -1672,7 +1672,7 @@
         "Signal Processing"
       ],
       "description": "Biomedical imaging is a clinically important application of engineering, applied mathematics, physics, and medicine. In this course, we apply linear systems theory and basic physics to analyze X-ray imaging, computerized tomography, nuclear medicine, and MRI. We cover the basic physics and instrumentation that characterizes medical image as an ideal perfect-resolution image blurred by an impulse response. This material could prepare the student for a career in designing new medical imaging systems that reliably detect small tumors or infarcts.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 64 and ELENG 66.",
       "prereqs": [
         [
@@ -1699,7 +1699,7 @@
         "Biosystems & Computational Biology"
       ],
       "description": "Laboratory exercises exploring a variety of electronic transducers for measuring physical quantities such as temperature, force, displacement, sound, light, ionic potential; the use of circuits for low-level differential amplification and analog signal processing; and the use of microcomputers for digital sampling and display. Lectures cover principles explored in the laboratory exercises; construction, response and signal to noise of electronic transducers and actuators; and design of circuits for sensing and controlling physical quantities.",
-      "class_hours": 5.0,
+      "class_hours": 5,
       "prereq_text": "",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/EEC145L/",
@@ -1717,7 +1717,7 @@
       ],
       "areas": [],
       "description": "Introduction to laboratory and field study of the biomechanics of animals and plants using fundamental biomechanical techniques and equipment. Course has a series of rotations involving students in experiments demonstrating how solid and fluid mechanics can be used to discover the way in which diverse organisms move and interact with their physical environment. The laboratories emphasize sampling methodology, experimental design, and statistical interpretation of results. Latter third of course devoted to independent research projects. Written reports and class presentation of project results are required.",
-      "class_hours": 8.0,
+      "class_hours": 8,
       "prereq_text": "INTEGBI 135 or consent of instructor. For Electrical Engineering and Computer Sciences students: EL ENG 105, EL ENG 120 or COMPSCI 184.",
       "prereqs": [
         [
@@ -1766,7 +1766,7 @@
         "Signal Processing"
       ],
       "description": "This course covers the fundamentals of probability and random processes useful in fields such as networks, communication, signal processing, and control. Sample space, events, probability law. Conditional probability. Independence. Random variables. Distribution, density functions. Random vectors. Law of large numbers. Central limit theorem. Estimation and detection. Markov chains.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI 70 preferred but not required. Familiarity with linear algebra.",
       "prereqs": [],
       "source": "https://www2.eecs.berkeley.edu/Courses/EECS126/",
@@ -1787,7 +1787,7 @@
         "Control, Intelligent Systems, and Robotics"
       ],
       "description": "This course offers an introduction to optimization models and their applications, ranging from machine learning and statistics to decision-making and control, with emphasis on numerically tractable problems, such as linear or constrained least-squares optimization.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 64 and ELENG 66, or consent of instructor.",
       "prereqs": [
         [
@@ -1837,7 +1837,7 @@
       ],
       "areas": [],
       "description": "This course introduces students to the basics of modeling, analysis, and design of embedded, cyber-physical systems. Students learn how to integrate computation with physical processes to meet a desired specification. Topics include models of computation, control, analysis and verification, interfacing with the physical world, real-time behaviors, mapping to platforms, and distributed embedded systems. The course has a strong laboratory component, with emphasis on a semester-long sequence of projects.",
-      "class_hours": 6.0,
+      "class_hours": 6,
       "prereq_text": "COMPSCI 61C and COMPSCI 70; ELENG 66 and ELENG 66, or permission of instructor.",
       "prereqs": [
         [
@@ -1871,7 +1871,7 @@
         "Computer Architecture & Engineering"
       ],
       "description": "An introduction to digital and system design. The material provides a top-down view of the principles, components, and methodologies for large scale digital system design. The underlying CMOS devices and manufacturing technologies are introduced, but quickly abstracted to higher-levels to focus the class on design of larger digital modules for both FPGAs (field programmable gate arrays) and ASICs (application specific integrated circuits). The class includes extensive use of industrial grade design automation and verification tools for assignments, labs and projects. The class has two lab options: ASIC Lab (EECS 151LA) and FPGA Lab (EECS 151LB). Students must enroll in at least one of the labs concurrently with the class.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 66 and ELENG 64.",
       "prereqs": [
         [
@@ -1897,7 +1897,7 @@
       ],
       "areas": [],
       "description": "This lab lays the foundation of modern digital design by first presenting the scripting and hardware description language base for specification of digital systems and interactions with tool flows. The labs are centered on a large design with the focus on rapid design space exploration. The lab exercises culminate with a project design, e.g., implementation of a three-stage RISC-V processor with a register file and caches. The design is mapped to simulation and layout specification.",
-      "class_hours": 3.0,
+      "class_hours": 3,
       "prereq_text": "COMPSCI 61C, ELENG 66, ELENG 64, and ELENG 105.",
       "prereqs": [
         [
@@ -1929,7 +1929,7 @@
       ],
       "areas": [],
       "description": "This lab covers the design of modern digital systems with Field-Programmable Gate Array (FPGA) platforms. A series of lab exercises provide the background and practice of digital design using a modern FPGA design tool flow. Digital synthesis, partitioning, placement, routing, and simulation tools for FPGAs are covered in detail. The labs exercises culminate with a large design project, e.g., an implementation of a full three-stage RISC-V processor system, with caches, graphics acceleration, and external peripheral components. The design is mapped and demonstrated on an FPGA hardware platform.",
-      "class_hours": 3.0,
+      "class_hours": 3,
       "prereq_text": "ELENG 64, ELENG 66, and COMPSCI 61C. ELENG 105 recommended.",
       "prereqs": [
         [
@@ -1958,7 +1958,7 @@
       ],
       "areas": [],
       "description": "This course provides a hands-on introduction to language technologies, covering methods for processing speech and text. This includes: statistical models, early neural models, and transformer-based LLMs; model architectures, training, evaluation, and social impacts; core tasks and methods like machine translation, parsing, and prompting; analysis and representation of speech and speech recognition models. Weekly assignments provide practical experience in building systems and understanding their strengths and limitations.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "COMPSCI C182, COMPSCI 188, or COMPSCI 189.",
       "prereqs": [
         [
@@ -1984,7 +1984,7 @@
       ],
       "areas": [],
       "description": "This course allows students who have had a discrete math and/or probability course to complete the work in CS70. Logic, infinity, and induction; applications include undecidability and stable marriage problem. Modular arithmetic and GCDs; applications include primality testing and cryptography. Polynomials; examples include error correcting codes and interpolation. Probability including sample spaces, independence, random variables, law of large numbers; examples include load balancing, existence arguments, Bayesian inference.",
-      "class_hours": 8.0,
+      "class_hours": 8,
       "prereq_text": "Sophomore mathematical maturity, programming experience equivalent to that gained in COMPSCI 61A, a prior college level course on discrete math and/or probability, and consent of the instructor.",
       "prereqs": [
         [
@@ -2033,7 +2033,7 @@
       ],
       "areas": [],
       "description": "This is the first semester of a multidisciplinary two-semester sequence in Quantum Computing. This semester provides an introduction to fundamental conceptual aspects of quantum mechanics in the language of qubits and quantum gates, and a first introduction to quantum computation. Topics in part one include basic concepts and results in quantum information, quantum algorithms, and an introduction to quantum error correction.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "ELENG 66 or PHYSICS 89 or MATH 54. Some background in either quantum mechanics (Physics 137A, Chemistry 120A, or equivalent) or discrete mathematics (CS 70, Math 55, or equivalent) is expected.",
       "prereqs": [
         [
@@ -2057,7 +2057,7 @@
       ],
       "areas": [],
       "description": "This is the second semester of a multidisciplinary two-semester sequence in Quantum Computing. This second semester covers fundamentals of control of qubits, methods of quantum error mitigation, quantum benchmarking, quantum supremacy and tests of quantumness, advanced quantum error correction including fault-tolerant quantum computing and error thresholds, theory/practice of near-term fault fault tolerance, discussions of different physical platforms for quantum computing, and alternative paradigms for quantum computing.",
-      "class_hours": 4.0,
+      "class_hours": 4,
       "prereq_text": "C191A or equivalent (with permission of instructor).",
       "prereqs": [
         [

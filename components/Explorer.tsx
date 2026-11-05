@@ -5,7 +5,14 @@ import ChainDiagram from "@/components/ChainDiagram";
 import {
   COURSES, EECS_COURSES, OUTSIDE_COURSES, UNLOCKS, byCode, dept, isUpper, matches, missingGroups, type Course,
 } from "@/lib/courses";
+import { rememberedTaken, rememberTaken, takeIncoming } from "@/lib/handoff";
 import { loadTaken, saveTaken } from "@/lib/taken";
+
+// saves the taken list here and hands it to the sister sites (keeping any courses this site doesn't list)
+function storeTaken(codes: string[]) {
+  saveTaken(codes);
+  rememberTaken([...codes, ...rememberedTaken().filter((c) => !COURSES[c])]);
+}
 
 const DEFAULT_COURSE = "CS189";
 
@@ -39,7 +46,11 @@ export default function Explorer() {
   // taken courses and the linked course (#CS170) live in the browser, so read them after the first render
   useEffect(() => {
     /* eslint-disable react-hooks/set-state-in-effect */
-    setTaken(loadTaken());
+    // plus any marked as taken on a sister site (?taken=...)
+    const incoming = (takeIncoming() ?? []).filter((c) => COURSES[c]);
+    const startTaken = [...new Set([...loadTaken(), ...incoming])];
+    setTaken(startTaken);
+    storeTaken(startTaken);
     setSelected(codeFromHash() ?? DEFAULT_COURSE);
     /* eslint-enable react-hooks/set-state-in-effect */
     const onHash = () => {
@@ -75,12 +86,12 @@ export default function Explorer() {
   function toggleTaken(code: string) {
     const next = takenSet.has(code) ? taken.filter((c) => c !== code) : [...taken, code];
     setTaken(next);
-    saveTaken(next);
+    storeTaken(next);
   }
 
   function clearTaken() {
     setTaken([]);
-    saveTaken([]);
+    storeTaken([]);
     setReadyOnly(false);
   }
 
