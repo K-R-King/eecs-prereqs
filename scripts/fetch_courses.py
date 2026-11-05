@@ -39,6 +39,11 @@ KIND_NOTES = {
     "topics": "Special topics change every term, each with its own prerequisites. See the Class Schedule for this term's.",
 }
 
+# courses still offered whose EECS page lists no recent term (EECS Planner assumes the same)
+TERM_OVERRIDES = {
+    "CSC191": (["Fall", "Spring"], "Still offered, but its EECS page lists no recent term; Fall and Spring are assumed. Check the Class Schedule."),
+}
+
 # this semester's DeCals (student-run courses), from the DeCal program's public course list
 DECAL_API = "https://berkeleydecal.com/api"
 DECAL_DEPARTMENTS = {"eecs", "computer science", "electrical engineering",
@@ -407,6 +412,10 @@ def main():
             c["catalog_source"] = CATALOG_PAGE.format(CATALOG[code]["catalogCode"].replace(" ", "%20"))
         if code in NOTES:
             c["note"] = NOTES[code]
+
+    for code, (terms, note) in TERM_OVERRIDES.items():
+        if code in courses and not courses[code]["terms"]:
+            courses[code]["terms"], courses[code]["note"] = terms, note
 
     unreviewed = []
     for code, c in courses.items():
