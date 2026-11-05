@@ -1020,7 +1020,10 @@
       "display": "CS C191",
       "title": "Introduction to Quantum Computing",
       "units": "4",
-      "terms": [],
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
       "areas": [],
       "description": "This multidisciplinary course provides an introduction to fundamental conceptual aspects of quantum mechanics from a computational and informational theoretic perspective, as well as physical implementations and technological applications of quantum information science. Basic sections of quantum algorithms, complexity, and cryptography, will be touched upon, as well as pertinent physical realizations from nanoscale science and engineering.",
       "class_hours": null,
@@ -1041,6 +1044,7 @@
       ],
       "source": "https://www2.eecs.berkeley.edu/Courses/CSC191/",
       "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%20C191",
+      "note": "Still offered, but its EECS page lists no recent term; Fall and Spring are assumed. Check the Class Schedule.",
       "coreqs": [],
       "reviewed": true
     },
