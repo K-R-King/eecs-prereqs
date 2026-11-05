@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { COURSES, UNLOCKS, matches, missingGroups } from "@/lib/courses";
+import { COURSES, DECALS, UNLOCKS, matches, missingGroups } from "@/lib/courses";
 
 const all = Object.values(COURSES);
 
@@ -51,5 +51,37 @@ describe("search", () => {
     expect(matches(COURSES.CS170, COURSES.CS170.title.slice(0, 8))).toBe(true);
     expect(matches(COURSES.CS170, "  ")).toBe(true);
     expect(matches(COURSES.CS170, "zzzz")).toBe(false);
+  });
+
+  it("understands the catalog's ELENG and COMPSCI names", () => {
+    expect(matches(COURSES.EE39, "eleng 39")).toBe(true);
+    expect(matches(COURSES.EE39, "el eng 39")).toBe(true);
+    expect(matches(COURSES.CS198, "compsci 198")).toBe(true);
+    expect(matches(COURSES.CS39, "eleng 39")).toBe(false);
+  });
+});
+
+describe("seminars, DeCals and special topics", () => {
+  const special = all.filter((c) => c.kind);
+
+  it("are listed, without prerequisites, each with a note", () => {
+    expect(special.map((c) => c.code)).toEqual(expect.arrayContaining(["CS198", "EE98", "CS194", "CS39", "EE39"]));
+    for (const c of special) {
+      expect(c.prereqs, c.code).toEqual([]);
+      expect(c.note, c.code).toBeTruthy();
+    }
+  });
+
+  it("are found by searching for them", () => {
+    expect(matches(COURSES.CS198, "decal")).toBe(true);
+    expect(matches(COURSES.CS39, "seminar")).toBe(true);
+  });
+
+  it("come with this semester's EECS DeCals, without contact details", () => {
+    expect(DECALS).not.toBeNull();
+    for (const d of DECALS!.courses) {
+      expect(d.title).toBeTruthy();
+      expect(JSON.stringify(d)).not.toMatch(/[\w.+-]+@[\w-]+\.[a-z]{2,}/i);  // no email addresses
+    }
   });
 });

@@ -33,3 +33,9 @@ for (const colorScheme of ["light", "dark"] as const) {
     expect(await problems(page)).toEqual([]);
   });
 }
+
+test("a DeCal page has no serious accessibility problems", async ({ page }) => {
+  await page.goto("/#CS198");
+  await expect(page.getByRole("heading", { name: /EECS DeCals/ })).toBeVisible();
+  expect(await problems(page)).toEqual([]);
+});
