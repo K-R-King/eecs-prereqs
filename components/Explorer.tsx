@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import ChainDiagram from "@/components/ChainDiagram";
 import NextTerm from "@/components/NextTerm";
 import {
-  COURSES, EECS_COURSES, OUTSIDE_COURSES, UNLOCKS, byCode, dept, isUpper, matches, missingGroups, type Course,
+  COURSES, DECALS, EECS_COURSES, KIND_LABELS, OUTSIDE_COURSES, UNLOCKS, byCode, dept, isUpper, matches, missingGroups, type Course,
 } from "@/lib/courses";
 import { rememberedTaken, rememberTaken, takeIncoming } from "@/lib/handoff";
 import { loadTaken, saveTaken } from "@/lib/taken";
@@ -22,6 +22,7 @@ const LEVELS = [
   { id: "lower", label: "Lower division" },
   { id: "upper", label: "Upper division" },
   { id: "outside", label: "Outside EECS" },
+  { id: "special", label: "Seminars & DeCals" },
 ] as const;
 type Level = (typeof LEVELS)[number]["id"];
 
@@ -114,6 +115,7 @@ export default function Explorer() {
   const visible = useMemo(() => {
     const pool = level === "outside" ? OUTSIDE_COURSES : level === "all" ? [...EECS_COURSES, ...OUTSIDE_COURSES] : EECS_COURSES;
     return pool
+      .filter((c) => level !== "special" || c.kind)
       .filter((c) => level !== "lower" || !isUpper(c))
       .filter((c) => level !== "upper" || isUpper(c))
       .filter((c) => !depts.length || depts.includes(dept(c)))
@@ -273,6 +275,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
 
 function Status({ course, taken }: { course: Course; taken: Set<string> }) {
   if (taken.has(course.code)) return <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">✓ taken</span>;
+  if (course.kind) return <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300">{KIND_LABELS[course.kind]}</span>;
   if (!taken.size) return null;
   const missing = missingGroups(course, taken).length;
   return missing === 0
@@ -398,8 +401,16 @@ function CourseDetail({ course, taken, onSelect, onToggleTaken }: {
         ))}
       </div>
 
+      {/* seminars, DeCals, special topics: the requirements depend on the topic */}
+      {course.kind && (
+        <p className="mt-5 rounded-2xl bg-berkeley/5 px-4 py-3 text-sm text-slate-700 ring-1 ring-berkeley/15 dark:bg-blue-400/10 dark:text-slate-200 dark:ring-blue-400/20">
+          ℹ️ {course.note}
+        </p>
+      )}
+      {course.kind === "decal" && <DecalList />}
+
       {/* readiness */}
-      {!done && taken.size > 0 && (
+      {!done && !course.kind && taken.size > 0 && (
         <p className={`mt-5 rounded-2xl px-4 py-3 text-sm font-medium ${
           missing.length === 0
             ? "bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-200 dark:ring-emerald-800"
@@ -448,7 +459,7 @@ function CourseDetail({ course, taken, onSelect, onToggleTaken }: {
       <div className="mt-8 rounded-2xl border-l-4 border-gold bg-slate-50 dark:bg-slate-800/60 p-4">
         <p className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">Official prerequisites</p>
         <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">{course.prereq_text || "None listed."}</p>
-        {course.note && <p className="mt-2 text-xs text-amber-800 dark:text-amber-200">⚠️ {course.note}</p>}
+        {course.note && !course.kind && <p className="mt-2 text-xs text-amber-800 dark:text-amber-200">⚠️ {course.note}</p>}
         <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
           {[
             { href: course.outside ? course.source : course.catalog_source, label: "Berkeley catalog ↗" },
@@ -461,5 +472,45 @@ function CourseDetail({ course, taken, onSelect, onToggleTaken }: {
         </div>
       </div>
     </article>
+  );
+}
+
+// this semester's EECS DeCals (student-run courses taken as CS or EE 98/198), from berkeleydecal.com
+function DecalList() {
+  if (!DECALS?.courses.length) {
+    return (
+      <p className="mt-5 text-sm text-slate-600 dark:text-slate-400">
+        Browse this semester&apos;s DeCals at{" "}
+        <a href="https://berkeleydecal.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-berkeley-light underline dark:text-blue-300">berkeleydecal.com ↗</a>.
+      </p>
+    );
+  }
+  return (
+    <div className="mt-6">
+      <h3 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
+        EECS DeCals, {DECALS.semester} <span className="text-gold-dark dark:text-gold">{DECALS.courses.length}</span>
+      </h3>
+      <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+        {DECALS.courses.map((d) => (
+          <li key={d.title} className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200 dark:bg-slate-800/60 dark:ring-slate-700">
+            <p className="font-semibold text-berkeley dark:text-blue-300">
+              {d.title} {d.units && <span className="text-xs font-normal text-slate-600 dark:text-slate-400">· {d.units} unit{d.units === "1" ? "" : "s"}</span>}
+            </p>
+            <p className="mt-1 line-clamp-3 text-sm text-slate-600 dark:text-slate-400">{d.description}</p>
+            {(d.website || d.apply) && (
+              <p className="mt-2 flex flex-wrap gap-x-4 text-sm">
+                {d.website && <a href={d.website} target="_blank" rel="noopener noreferrer" className="font-semibold text-berkeley-light hover:text-gold-dark dark:text-blue-300 dark:hover:text-gold">Website ↗</a>}
+                {d.apply && <a href={d.apply} target="_blank" rel="noopener noreferrer" className="font-semibold text-berkeley-light hover:text-gold-dark dark:text-blue-300 dark:hover:text-gold">Apply ↗</a>}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-3 text-xs text-slate-600 dark:text-slate-400">
+        From the{" "}
+        <a href="https://berkeleydecal.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-berkeley-light underline dark:text-blue-300">DeCal program</a>,
+        which has every department&apos;s DeCals, times and enrollment steps.
+      </p>
+    </div>
   );
 }

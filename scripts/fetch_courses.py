@@ -3,8 +3,9 @@ Build data/courses.json from the EECS department's course pages.
 
 The CS and EE list pages link to every course; each course page has the title, units,
 catalog description, related areas, official prerequisite text, and the terms it's offered.
-We keep undergraduate courses (numbered below 200), skipping seminars, DeCals, special topics
-and independent study, whose prerequisites change every term.
+We keep undergraduate courses (numbered below 200), skipping field study and independent study.
+Seminars, DeCals (98/198) and special topics (194) are kept as one entry each, without prerequisites,
+since those change with every topic; this semester's EECS DeCals come from berkeleydecal.com.
 
 Usage (from the project root):  python scripts/fetch_courses.py
 """
@@ -13,6 +14,7 @@ import datetime
 import html
 import json
 import re
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -26,8 +28,21 @@ SITE = "https://www2.eecs.berkeley.edu"
 LISTS = ["CS", "EE"]  # the EE list includes EECS courses
 SEASONS = ("Fall", "Spring", "Summer")
 
-# seminars, DeCals, special topics, field work, independent study, honors thesis, online copies
-SKIP_NUMBERS = {"24", "36", "39", "84", "97", "98", "99", "194", "197", "198", "199"}
+# field work and independent study
+SKIP_NUMBERS = {"97", "99", "197", "199"}
+# course numbers whose topic (and prerequisites) change every term
+KINDS = {"24": "seminar", "36": "seminar", "39": "seminar", "84": "seminar",
+         "98": "decal", "198": "decal", "194": "topics"}
+KIND_NOTES = {
+    "seminar": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's.",
+    "decal": "Student-taught DeCals use this number. Each sets its own requirements; this semester's EECS DeCals are listed below.",
+    "topics": "Special topics change every term, each with its own prerequisites. See the Class Schedule for this term's.",
+}
+
+# this semester's DeCals (student-run courses), from the DeCal program's public course list
+DECAL_API = "https://berkeleydecal.com/api"
+DECAL_DEPARTMENTS = {"eecs", "computer science", "electrical engineering",
+                     "electrical engineering and computer sciences", "electrical engineering & computer sciences"}
 
 # how the department writes subjects inside prerequisite text -> our prefix
 SUBJECTS = {
@@ -200,6 +215,33 @@ def fetch(path):
         return response.read().decode("utf-8", "replace")
 
 
+def decal_json(path):
+    req = urllib.request.Request(DECAL_API + path, headers={"User-Agent": "eecs-prereqs data refresh"})
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_decals(previous):
+    """This semester's EECS and CS DeCals, without contact details; the last list if the DeCal site can't be read."""
+    try:
+        semester = max(decal_json("/semesters")["semesters"], key=lambda s: s["sort_key"])["semester"]
+        found = decal_json(f"/approvedCourses?semester={urllib.parse.quote(semester)}")["courses"]
+    except Exception as e:  # the DeCal site is run by students and can be down
+        print(f"  couldn't read DeCals ({e}); keeping the last list")
+        return previous
+    link = lambda v: v if isinstance(v, str) and v.startswith("http") else None
+    courses = [{
+        "title": c["title"].strip(),
+        "units": str(c.get("units") or "").strip() or None,
+        "department": c["department"].strip(),
+        "description": (c.get("description") or "").strip(),
+        "website": link(c.get("website")),
+        "apply": link(c.get("application_url")),
+    } for c in found if c.get("department", "").strip().lower() in DECAL_DEPARTMENTS]
+    print(f"  {len(courses)} EECS DeCals in {semester}")
+    return {"semester": semester, "source": "https://berkeleydecal.com", "courses": sorted(courses, key=lambda c: c["title"])}
+
+
 def page_text(raw):
     return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw)))
 
@@ -349,7 +391,9 @@ def main():
     # cross-listed courses have a page under each department; keep one per title
     courses, titles = {}, set()
     for c in sorted(found, key=lambda c: (c["code"].startswith("EEC"), c["code"])):
-        if c["title"] in titles or not c["title"]:
+        # (CS 39 and EE 39 share a generic title but are different departments' seminars)
+        generic = re.match(r"[A-Z]+?C?(\d+)", c["code"]).group(1) in KINDS
+        if not c["title"] or (c["title"] in titles and not generic):
             continue
         titles.add(c["title"])
         c["code"] = ALIASES.get(c["code"], c["code"])
@@ -366,7 +410,11 @@ def main():
 
     unreviewed = []
     for code, c in courses.items():
-        if code in MANUAL:
+        kind = KINDS.get(re.match(r"[A-Z]+?C?(\d+)", code).group(1))
+        if kind:
+            c["kind"], c["prereqs"], c["coreqs"], c["reviewed"] = kind, [], [], True
+            c["note"] = KIND_NOTES[kind]
+        elif code in MANUAL:
             c["prereqs"], c["coreqs"] = MANUAL[code]
             c["reviewed"] = True
         else:
@@ -394,11 +442,15 @@ def main():
         for key in ("prereqs", "coreqs"):
             c[key] = [g for g in ([code for code in g if code in known] for g in c[key]) if g]
 
+    previous = json.loads(OUTPUT.read_text(encoding="utf-8")).get("decals") if OUTPUT.exists() else None
+    decals = fetch_decals(previous)
+
     OUTPUT.parent.mkdir(exist_ok=True)
     OUTPUT.write_text(json.dumps({
         "checked": datetime.date.today().isoformat(),
         "courses": courses,
         "outside": outside,
+        "decals": decals,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {len(courses)} courses (+{len(outside)} outside EECS) to {OUTPUT}")
     for code in unreviewed:

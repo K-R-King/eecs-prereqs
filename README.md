@@ -4,12 +4,13 @@ See what every undergraduate EECS course needs first, the full chain back to you
 
 ## Features
 
-- **78 undergraduate CS, EE and EECS courses**, plus the 22 math, physics, statistics and other courses they build on or accept as alternatives.
+- **89 undergraduate CS, EE and EECS courses**, plus the 22 math, physics, statistics and other courses they build on or accept as alternatives.
 - **Full prerequisite chain** for every course, drawn as a diagram from your first class to that course. Click any course in it to jump there.
 - **What it unlocks:** every course that lists it as a prerequisite.
 - **Ready to take it?** Mark the courses you've taken and every course shows whether you've met its prerequisites. Filter to "only what I can take". Saved in your browser.
 - **Search and filters:** by code, name, or area (e.g. "machine learning"), lower or upper division, department, and related area. Press `/` to search, `Enter` to open the first match.
 - **What can I take next term?** Every course you're ready for that has been offered in Fall, Spring or Summer, EECS first and the courses that open up the most others at the top. Courses you've moved past (CS 61A after CS 61B) are left out.
+- **Seminars and DeCals:** freshman and sophomore seminars, special topics (194) and DeCals (98/198) are listed under **Seminars & DeCals**. Their requirements depend on each term's topic, so they show a note instead of prerequisites, and the DeCal pages list this semester's EECS DeCals from the [DeCal program](https://berkeleydecal.com).
 - **Shareable links:** `#CS170` at the end of the URL opens that course, and `#next` opens "What can I take next term?".
 - The official prerequisite text on every course, with links to the Berkeley catalog and the EECS course page, and a note wherever those sources disagree.
 - Light and dark mode, and a layout that works on phones.
@@ -38,7 +39,8 @@ node scripts/fetch_catalog.mjs          # Berkeley catalog  -> data/catalog.json
 python scripts/fetch_courses.py         # again, to use the catalog's wording and check against it
 ```
 
-- **[EECS department course pages](https://www2.eecs.berkeley.edu/Courses/):** every undergraduate course on the CS and EE lists (skipping seminars, DeCals, special topics and independent study), with its title, units, terms, related areas, weekly class hours and description.
+- **[EECS department course pages](https://www2.eecs.berkeley.edu/Courses/):** every undergraduate course on the CS and EE lists (skipping field study and independent study; seminars, DeCals and special topics are kept as one entry per number), with its title, units, terms, related areas, weekly class hours and description.
+- **[DeCal program](https://berkeleydecal.com):** the current semester's DeCals sponsored by EECS, Computer Science or Electrical Engineering (title, units, description and links; no contact details). If the site can't be read, the last list is kept.
 - **[Berkeley undergraduate catalog](https://undergraduate.catalog.berkeley.edu/):** the registrar's current prerequisite wording, and structured rules for many courses. Its data service only answers requests from the catalog site, so `fetch_catalog.mjs` opens the public catalog in a headless browser and runs the same lookups the site does.
 
 The official wording varies too much to read reliably by machine, so each course's prerequisites were read by hand and written into `MANUAL` in `fetch_courses.py`. Each course has a list of requirements, and any one course in a requirement meets it. Every run compares `MANUAL` with the catalog's structured rules and prints anything it doesn't account for.

@@ -21,7 +21,23 @@ export type Course = {
   // hours per week in lecture, discussion and lab
   class_hours?: number | null;
   outside?: boolean;
+  // seminars, DeCals and special topics: one entry per number, whose topic changes every term
+  kind?: Kind;
 };
+
+export type Kind = "seminar" | "decal" | "topics";
+export const KIND_LABELS: Record<Kind, string> = { seminar: "Seminar", decal: "DeCal", topics: "Special topics" };
+
+/** A student-run course this semester (from berkeleydecal.com); they're taken as CS or EE 98/198. */
+export type Decal = {
+  title: string;
+  units: string | null;
+  department: string;
+  description: string;
+  website: string | null;
+  apply: string | null;
+};
+export const DECALS = (data as { decals?: { semester: string; source: string; courses: Decal[] } | null }).decals ?? null;
 
 export const CHECKED: string = data.checked;
 export const EECS_COURSES = Object.values(data.courses) as Course[];
@@ -60,7 +76,8 @@ export function matches(c: Course, query: string) {
     c.code.toLowerCase().includes(compact) ||
     c.display.toLowerCase().includes(q) ||
     c.title.toLowerCase().includes(q) ||
-    (c.areas ?? []).some((a) => a.toLowerCase().includes(q))
+    (c.areas ?? []).some((a) => a.toLowerCase().includes(q)) ||
+    (!!c.kind && KIND_LABELS[c.kind].toLowerCase().includes(q))
   );
 }
 
@@ -102,6 +119,8 @@ export function availableIn(term: Term, taken: Set<string>): Course[] {
   for (const code of done) behind.add(`${code}L`);
   return Object.values(COURSES)
     .filter((c) => !done.has(c.code) && !behind.has(c.code))
+    // seminars, DeCals and special topics have their own filter: their requirements depend on the topic
+    .filter((c) => !c.kind)
     // "Completion of work in CS 61A" and the like only finish a course started elsewhere (e.g. transfers)
     .filter((c) => !/^completion of work/i.test(c.title))
     .filter((c) => (c.terms ?? []).includes(term) && missingGroups(c, done).length === 0)

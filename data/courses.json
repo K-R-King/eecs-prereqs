@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-02",
+  "checked": "2026-11-05",
   "courses": {
     "CS10": {
       "code": "CS10",
@@ -580,6 +580,30 @@
       "coreqs": [],
       "reviewed": true
     },
+    "CS194": {
+      "code": "CS194",
+      "display": "CS 194",
+      "title": "Special Topics",
+      "units": "1-4",
+      "terms": [
+        "Fall",
+        "Spring",
+        "Summer"
+      ],
+      "areas": [
+        "Security",
+        "Theory"
+      ],
+      "description": "Topics will vary semester to semester. See the Computer Science Division announcements.",
+      "class_hours": 4,
+      "prereq_text": "Consent of instructor.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/CS194/",
+      "kind": "topics",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "Special topics change every term, each with its own prerequisites. See the Class Schedule for this term's."
+    },
     "CS195": {
       "code": "CS195",
       "display": "CS 195",
@@ -599,6 +623,66 @@
       "source": "https://www2.eecs.berkeley.edu/Courses/CS195/",
       "coreqs": [],
       "reviewed": true
+    },
+    "CS198": {
+      "code": "CS198",
+      "display": "CS 198",
+      "title": "Directed Group Studies for Advanced Undergraduates",
+      "units": "1-4",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Group study of selected topics in Computer Sciences, usually relating to new developments.",
+      "class_hours": 4,
+      "prereq_text": "2.0 GPA or better; 60 units completed.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/CS198/",
+      "kind": "decal",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "Student-taught DeCals use this number. Each sets its own requirements; this semester's EECS DeCals are listed below."
+    },
+    "CS36": {
+      "code": "CS36",
+      "display": "CS 36",
+      "title": "CS Scholars Seminar: The Educational Climate in CS & CS61A technical discussions",
+      "units": "2",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Computer Science 36 is a seminar for CS Scholars who are concurrently taking CS61A: The Structure and Interpretation of Computer Programs. CS Scholars is a cohort-model program to provide support in exploring and potentially declaring a CS major for students with little to no computational background prior to coming to the university. CS 36 provides an introduction to the CS curriculum at UC Berkeley, and the overall CS landscape in both industry and academia—through the lens of accessibility and its relevance to diversity. Additionally, CS36 provides technical instruction to review concepts in CS61A, in order to support CS Scholars’ individual learning and success in the CS61A course.",
+      "class_hours": 2,
+      "prereq_text": "Prerequisite satisfied Concurrently: Participating in the CS Scholars program, and concurrently taking COMPSCI 61A.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/CS36/",
+      "kind": "seminar",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's."
+    },
+    "CS39": {
+      "code": "CS39",
+      "display": "CS 39",
+      "title": "Freshman/Sophomore Seminar",
+      "units": "1",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Freshman and sophomore seminars offer lower division students the opportunity to explore an intellectual topic with a faculty member and a group of peers in a small-seminar setting. These seminars are offered in all campus departments; topics vary from department to department and from semester to semester. Enrollment limits are set by the faculty, but the suggested limit is 25.",
+      "class_hours": 3,
+      "prereq_text": "Priority given to freshmen and sophomores.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/CS39/",
+      "kind": "seminar",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's."
     },
     "CS47A": {
       "code": "CS47A",
@@ -789,6 +873,27 @@
       "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=COMPSCI%2070",
       "coreqs": [],
       "reviewed": true
+    },
+    "CS84": {
+      "code": "CS84",
+      "display": "CS 84",
+      "title": "Sophomore Seminar",
+      "units": "1-2",
+      "terms": [
+        "Fall",
+        "Spring",
+        "Summer"
+      ],
+      "areas": [],
+      "description": "Sophomore seminars are small interactive courses offered by faculty members in departments all across the campus. Sophomore seminars offer opportunity for close, regular intellectual contact between faculty members and students in the crucial second year. The topics vary from department to department and semester to semester. Enrollment limited to 15 sophomores.",
+      "class_hours": 3,
+      "prereq_text": "At discretion of instructor.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/CS84/",
+      "kind": "seminar",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's."
     },
     "CSC100": {
       "code": "CSC100",
@@ -1557,6 +1662,86 @@
       "coreqs": [],
       "reviewed": true
     },
+    "EE194": {
+      "code": "EE194",
+      "display": "EE 194",
+      "title": "Special Topics",
+      "units": "1-4",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Topics will vary semester to semester. See the Electrical Engineering announcements.",
+      "class_hours": 4,
+      "prereq_text": "Consent of instructor.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/EE194/",
+      "kind": "topics",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "Special topics change every term, each with its own prerequisites. See the Class Schedule for this term's."
+    },
+    "EE198": {
+      "code": "EE198",
+      "display": "EE 198",
+      "title": "Directed Group Study for Advanced Undergraduates",
+      "units": "1-4",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Group study of selected topics in electrical engineering, usually relating to new developments.",
+      "class_hours": 4,
+      "prereq_text": "2.0 GPA or better; 60 units completed.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/EE198/",
+      "kind": "decal",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "Student-taught DeCals use this number. Each sets its own requirements; this semester's EECS DeCals are listed below."
+    },
+    "EE24": {
+      "code": "EE24",
+      "display": "EE 24",
+      "title": "Freshman Seminar",
+      "units": "1",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "The Freshman Seminar Program has been designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. Freshman seminars are offered in all campus departments, and topics may vary from department to department and semester to semester.",
+      "class_hours": 1,
+      "prereq_text": "",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/EE24/",
+      "kind": "seminar",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's."
+    },
+    "EE39": {
+      "code": "EE39",
+      "display": "EE 39",
+      "title": "Freshman/Sophomore Seminar",
+      "units": null,
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Freshman and sophomore seminars offer lower division students the opportunity to explore an intellectual topic with a faculty member and a group of peers in a small-seminar setting. These seminars are offered in all campus departments; topics vary from department to department and from semester to semester. Enrollment limits are set by the faculty, but the suggested limit is 25.",
+      "class_hours": 4,
+      "prereq_text": "Priority given to freshmen and sophomores.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/EE39/",
+      "kind": "seminar",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's."
+    },
     "EE64": {
       "code": "EE64",
       "display": "EE 64",
@@ -1602,6 +1787,47 @@
       "catalog_source": "https://undergraduate.catalog.berkeley.edu/courses?cq=ELENG%2066",
       "coreqs": [],
       "reviewed": true
+    },
+    "EE84": {
+      "code": "EE84",
+      "display": "EE 84",
+      "title": "Sophomore Seminar",
+      "units": "1-2",
+      "terms": [
+        "Fall",
+        "Spring",
+        "Summer"
+      ],
+      "areas": [],
+      "description": "Sophomore seminars are small interactive courses offered by faculty members in departments all across the campus. Sophomore seminars offer opportunity for close, regular intellectual contact between faculty members and students in the crucial second year. The topics vary from department to department and semester to semester. Enrollment limited to 15 sophomores.",
+      "class_hours": 6,
+      "prereq_text": "At discretion of instructor.",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/EE84/",
+      "kind": "seminar",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "A seminar: each one sets its own topic and requirements. See the Class Schedule for this term's."
+    },
+    "EE98": {
+      "code": "EE98",
+      "display": "EE 98",
+      "title": "Directed Group Study for Undergraduates",
+      "units": "1-4",
+      "terms": [
+        "Fall",
+        "Spring"
+      ],
+      "areas": [],
+      "description": "Group study of selected topics in electrical engineering, usually relating to new developments.",
+      "class_hours": 4,
+      "prereq_text": "",
+      "prereqs": [],
+      "source": "https://www2.eecs.berkeley.edu/Courses/EE98/",
+      "kind": "decal",
+      "coreqs": [],
+      "reviewed": true,
+      "note": "Student-taught DeCals use this number. Each sets its own requirements; this semester's EECS DeCals are listed below."
     },
     "EEC106A": {
       "code": "EEC106A",
@@ -2415,5 +2641,67 @@
       "prereq_text": "Three years of high school math, including trigonometry. Consult the mathematics department for details.",
       "source": "https://undergraduate.catalog.berkeley.edu/courses?cq=MATH%2016A"
     }
+  },
+  "decals": {
+    "semester": "Fall 2026",
+    "source": "https://berkeleydecal.com",
+    "courses": [
+      {
+        "title": "Cubstart: Introduction to Building Apps",
+        "units": "2",
+        "department": "EECS",
+        "description": "IMPORTANT: (1) Classes start the week of September 21st (2) Friday meeting stated on Cal Central for iOS track is a mistake and will not be held.                                                                                                      \nWant to build your own app but don't know where to start? Cubstart is a project-based DeCal run by Hackathons @ Berkeley that teaches you how to design and build real applications from the ground up, no experience necessary.\n\n\nChoose the track that fits you:\nWeb Track (CS 198-750) – perfect for beginners, covering the fundamentals of full-stack web development from HTML/CSS to modern frameworks.\niOS Track (CS 198-075) – geared toward students with some coding background, diving into Swift and iOS app development.\n\n\nThroughout the semester, you'll learn through guided projects, workshops, and mentorship from experienced student instructors, building up the skills to tackle a final project of your own. In teams, you'll ideate, design, and build a full application, then show it off at Demo Day.\n\n\nWhether you're looking to break into tech, explore app development for the first time, or just build something cool with friends, Cubstart gives you the tools to make it happen.",
+        "website": "https://cubstart.com",
+        "apply": null
+      },
+      {
+        "title": "Deconstructing MRI: The Anatomy of a Scanner",
+        "units": "2",
+        "department": "EECS",
+        "description": "An introduction to MRI, designed for undergraduates with an engineering background.\n\nUnlike other imaging methods, the MRI signal comes from the hydrogen atoms in your body!\nHow does it work? Put the patient in a magnetic field, apply a radio frequency, and listen to the\nhydrogen atoms sing. If this sounds as cool to you as it sounds to me, this class is for you.\n\nThis field is interdisciplinary. You will learn some physics, math, and biology, and then see\nhow these concepts work together to make MRI possible. The approach to imaging is also broadly\napplicable, and the intuition you develop will come in handy throughout your engineering career.\n\nAt the end of the class you will program a scanner to see inside your wrist. It'll be a lot of fun!\n\nThis class is designed to be accessible for anyone who knows what a fourier transform is, or is willing to learn. If you're interested in clinical stuff (that is, you want to go to med school), this might be more involved than you need to know, but you will probably still find it interesting and semi-useful. Reach out with any questions!",
+        "website": null,
+        "apply": null
+      },
+      {
+        "title": "IEEE Micromouse",
+        "units": "1",
+        "department": "Electrical Engineering",
+        "description": "The UC Berkeley IEEE Student Branch’s Micromouse DeCal is a hands-on course aimed at undergraduates with an interest in robotics. In the class, teams of ~2 students are formed to build and program autonomous, maze-solving cars that follow the standards set in IEEE’s Micromouse competition.\n\nThe course assumes no experience and will be based around a series of labs and project milestones that cover a wide range of robotics concepts. The course will expose students to CircuitPython programming, autonomous navigation, sensors, PID, and basic electrical engineering.\n\nThis is a prerequisite free DeCal, we assume no prior knowledge. In this course you will learn how to solder (both through hole and SMD) and how to program on a microcontroller using python. Ultimately applying these skills to put together an autonomous maze solving mouse Each group is provided a PCB and components free of charge. You will spend the first few sessions of the semester assembling your mouse. Afterwards we will move onto programming the mouse, programming labs can typically be completed within the two hour time slot of our sessions. You may take your mouse home to work on it if you find yourself wanting more time.\n\nWe will have weekly 2 hour long sessions. We may hold office hours / workshops depending on how the course is progressing. The first 20-30 minutes or so of the weekly sessions should be a primer on that week’s content, the lab documentation will expand on the content covered during lecture. Students will be checked off when they complete each lab.\n\nThere will be no exams, your grade will be primarily determined by the completion of your mouse as well as attending the majority of our session. Please contact any of the instructors using the micromouse email, or you can find our information on the staff page of the website. DeCals are for your enjoyment and you will get much more out of them if you attend every session. If you have any questions regarding your standing please reach out to a staff member.\n\nAll necessary parts will be provided to students at no cost.",
+        "website": "https://micromouse.berkie.ee/course-info/",
+        "apply": null
+      },
+      {
+        "title": "Introduction to Full-Stack Development",
+        "units": "3",
+        "department": "EECS",
+        "description": "This is Introduction to Full Stack Web Development, presented by Web Development at Berkeley. In this course, we cover the basics of web development. This includes everything from the fundamental frameworks that ground web development, the inner workings of the Internet itself, and many of the frameworks, technologies, and best practices that are used in the industry today. No prior CS experience is required to participate and succeed in this course, but we do acknowledge that we cover a fairly large amount of material, and that makes this course fairly heavy, even for those with prior CS experience. In the spirit of full-stack development, we cover the three main pillars of modern web development: backend development, frontend development, and design. Every week you will attend 2 lectures, each 1.5 hours. Most lectures will have a short vitamin assignment accompanying them and you will typically have a project due every 3 weeks to a month. Course staff will be holding office hours regularly throughout the week to provide guidance and feedback on the assignments. Towards the end of the semester your work in this class will culminate in a final project with a project group.\n\nWebsite: https://fullstackdecal.com/",
+        "website": "https://fullstackdecal.com/",
+        "apply": "https://forms.gle/3Q7HfprqEUpHjqBH6"
+      },
+      {
+        "title": "Linux System Administration",
+        "units": "2",
+        "department": "Computer Science",
+        "description": "Visit the course site at decal.ocf.io!\n\nWe will be covering the basics of administering a Linux-based server environment in the manner of the EECS Instructional Servers (hivexx.cs.berkeley.edu) and the Open Computing Facility (tsunami.ocf.berkeley.edu, etc.). By the end of this course, we expect you to be comfortable using GNU/Linux, understand in a broad sense how the system’s various parts work together, e.g. init, filesystems, services, daemons, etc., understand basic networking, have a good sense about maintaining system security, understand system administration essentials in general and have a practical taste of what sysadmins do in industry.\n\nWe know potential students will have differing backgrounds in terms of CS and sysadmin experience. The OCF will provide support for students of all levels by being available for drop-in help during staff hours and of course during lab time. Everyone is welcome!",
+        "website": "https://decal.ocf.io",
+        "apply": "https://forms.gle/dg9xhNNsGR95VaeU9"
+      },
+      {
+        "title": "Quantum Algorithms",
+        "units": "2",
+        "department": "EECS",
+        "description": "This course deals with the application of quantum computing to algorithmic design. In the course, you will learn about the \"classic\" quantum algorithms such as Shor's and Grover's, as well as more modern perspectives involving Qubitization, Adiabatic Quantum Computation, and variational approaches. \n\nWe expect a basic understanding of quantum mechanics, linear algebra, and quantum circuits. This course will be a great companion along with the EECS 191A/B series.",
+        "website": "https://qcb.studentorg.berkeley.edu/fa26decal",
+        "apply": null
+      },
+      {
+        "title": "UCBUGG: 3D Modeling and Animation",
+        "units": "3",
+        "department": "Computer Science",
+        "description": "Throughout this class, students learn how to 3D Model and Animate using the software Autdesk Maya. Students will learn how to create their own short 1-2 minute animated film, learning how to storyboard, model, rig, shade, animate, and render their work! No experience is required at all as we accept all levels of students having both a Basic and Advanced course. We encourage everyone to come to our info-session on Monday (8/31) from 7PM - 9PM or Wednesday (9/2) 7PM - 9PM, whichever time works best for you! If you would like to see past student's work check out our YouTube channel: https://www.youtube.com/@UCBUGG\n\nFor updates and announcements about the DeCal, join the 3DMA discord, the club in charge of running the DeCal: https://discord.gg/ZUFgDry",
+        "website": "https://www.ucbugg.com",
+        "apply": "https://forms.gle/xkaHpuJhn88gniEh6"
+      }
+    ]
   }
 }

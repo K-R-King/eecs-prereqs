@@ -66,3 +66,9 @@ describe("availableIn", () => {
     expect(eecs).toEqual([...eecs].sort((a, b) => b - a));
   });
 });
+
+describe("seminars and DeCals", () => {
+  it("aren't suggested for next term (their requirements depend on the topic)", () => {
+    expect(availableIn("Fall", new Set()).filter((c) => c.kind)).toEqual([]);
+  });
+});
