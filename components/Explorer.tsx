@@ -30,8 +30,12 @@ const DEPTS = ["CS", "EE", "EECS"];
 const AREAS = [...new Set(EECS_COURSES.flatMap((c) => c.areas ?? []))].sort();
 
 function codeFromHash() {
-  const code = decodeURIComponent(window.location.hash.slice(1)).toUpperCase();
-  return COURSES[code] ? code : null;
+  try {
+    const code = decodeURIComponent(window.location.hash.slice(1)).toUpperCase();
+    return COURSES[code] ? code : null;
+  } catch {
+    return null;  // a damaged link, like #%E0%A4%A
+  }
 }
 
 export default function Explorer() {
